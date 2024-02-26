@@ -36,7 +36,7 @@ func handle_jump():
 	if Input.is_action_just_pressed("ui_accept") and jumps > 0:
 		velocity.y = JUMP_VELOCITY
 		jumps -= 1
-	if Input.is_action_just_released("ui_accept") and velocity.y < JUMP_VELOCITY/2:
-		velocity.y = move_toward(velocity.y, 0, 1000)
 	elif is_on_floor():
 		jumps = NUM_JUMPS	
+	if Input.is_action_just_released("ui_accept") and velocity.y < JUMP_VELOCITY/2:
+		velocity.y = move_toward(velocity.y, 0, 1000)
