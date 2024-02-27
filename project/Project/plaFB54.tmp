@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://k5icotw4uf5m"]
+[gd_scene load_steps=5 format=3 uid="uid://k5icotw4uf5m"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_62ywx"]
 [ext_resource type="Texture2D" uid="uid://4ws0gp0s1e7s" path="res://icon.svg" id="1_508qs"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="3_qduf7"]
-[ext_resource type="Script" path="res://hud.gd" id="4_mwovl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6v0y"]
 size = Vector2(32, 32)
@@ -21,25 +20,11 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_508qs")
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
-limit_bottom = 768
-limit_smoothed = true
 script = ExtResource("3_qduf7")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="hud" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 0
-script = ExtResource("4_mwovl")
-
-[node name="NUM_JUMPS" type="RichTextLabel" parent="CanvasLayer/hud"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.906
-anchor_top = 1.28
-anchor_right = 0.906
-anchor_bottom = 1.28
-offset_right = 150.0
-offset_bottom = 30.0
-theme_override_font_sizes/normal_font_size = 15
-text = "Num Jumps: 3"
+[node name="NUM_JUMPS" type="RichTextLabel" parent="Sprite2D/Camera2D"]
+offset_left = 72.0
+offset_top = 8.0
+offset_right = 448.0
+offset_bottom = 152.0
+metadata/_edit_use_anchors_ = true
