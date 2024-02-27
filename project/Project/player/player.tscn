@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://k5icotw4uf5m"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_62ywx"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_62ywx"]
 [ext_resource type="Texture2D" uid="uid://4ws0gp0s1e7s" path="res://icon.svg" id="1_508qs"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="3_qduf7"]
 [ext_resource type="Script" path="res://hud.gd" id="4_mwovl"]
@@ -13,6 +13,9 @@ floor_constant_speed = true
 floor_snap_length = 25.0
 script = ExtResource("1_62ywx")
 
+[node name="throwing_spot" type="Node2D" parent="."]
+position = Vector2(24, 0)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_c6v0y")
 
@@ -21,6 +24,8 @@ scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_508qs")
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(2, 2)
+limit_left = -640
 limit_bottom = 768
 limit_smoothed = true
 script = ExtResource("3_qduf7")
@@ -32,7 +37,7 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("4_mwovl")
 
-[node name="NUM_JUMPS" type="RichTextLabel" parent="CanvasLayer/hud"]
+[node name="Status" type="RichTextLabel" parent="CanvasLayer/hud"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.906
@@ -40,6 +45,8 @@ anchor_top = 1.28
 anchor_right = 0.906
 anchor_bottom = 1.28
 offset_right = 150.0
-offset_bottom = 30.0
+offset_bottom = 48.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 15
-text = "Num Jumps: 3"
+text = "Num Jumps: 3
+IS JUMPING: "

@@ -1,10 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709042539
+::res://::1709063999
+Camera2D.gd::GDScript::-1::1709043601::0::1::::<>Camera2D<>::
 export_presets.cfg::TextFile::-1::1708973088::0::1::::<><>::
+hud.gd::GDScript::-1::1709062819::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::2082030666282807346::1708972681::1708972689::1::::<><>::
-main.gd::GDScript::-1::1709042286::0::1::::<>Node2D<>::
-main.tscn::PackedScene::4296406233407315208::1709042539::0::1::::<><>::res://main.gd<>uid://k5icotw4uf5m::::res://player.tscn
-player.gd::GDScript::-1::1708985723::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::764309842249370508::1709042559::0::1::::<><>::res://player.gd<>uid://4ws0gp0s1e7s::::res://icon.svg<>res://Camera2D.gd<>res://Control.gd
-Camera2D.gd::GDScript::-1::1709042384::0::1::::<>Camera2D<>::
-Control.gd::GDScript::-1::1709042498::0::1::::<>Control<>::
+main.gd::GDScript::-1::1709048649::0::1::::<>Node2D<>::
+main.tscn::PackedScene::4296406233407315208::1709064003::0::1::::<><>::res://main.gd<>uid://k5icotw4uf5m::::res://player.tscn
+player.gd::GDScript::-1::1709063929::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::764309842249370508::1709064003::0::1::::<><>::res://player.gd<>uid://4ws0gp0s1e7s::::res://icon.svg<>res://Camera2D.gd<>res://hud.gd
+test_level.tscn::PackedScene::5830052288373804748::1709064003::0::1::::<><>::uid://b26xgitownvip::::res://platforms/square_platform.tscn<>uid://k5icotw4uf5m::::res://player.tscn<>uid://b8dd11o7wjmn4::::res://platforms/slanted_platform.tscn
+::res://platforms/::1709061975
+slanted_platform.tscn::PackedScene::4709075627348242351::1709061975::0::1::::<><>::
+square_platform.tscn::PackedScene::4346922828097002427::1709061975::0::1::::<><>::
+::res://player/::1709063999
+::res://Textures/::1709052951
+64x64 snow.png::CompressedTexture2D::9025045991651877648::1709052947::1709052951::1::::<><>::
+Grass.png::CompressedTexture2D::8635204449755062036::1709051676::1709051678::1::::<><>::
+IMG_1945.png::CompressedTexture2D::2062854052422160828::1709050436::1709050438::1::::<><>::
+sheet.png::CompressedTexture2D::2953581028738837561::1709051562::1709051563::1::::<><>::
