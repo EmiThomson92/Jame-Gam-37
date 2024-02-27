@@ -7,6 +7,7 @@
 script = ExtResource("1_7glcb")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 40)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(0, -40)
@@ -16,9 +17,3 @@ polygon = PackedVector2Array(0, 0, 64, 0, 64, 488, 128, 488, 192, 552, 320, 552,
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_4sn45")]
 position = Vector2(96, 424)
-
-[node name="NUM_JUMPS" type="RichTextLabel" parent="."]
-offset_left = 72.0
-offset_top = 8.0
-offset_right = 448.0
-offset_bottom = 152.0

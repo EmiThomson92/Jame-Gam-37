@@ -1,4 +1,6 @@
 res://player.tscn
-res://player.gd
 res://main.tscn
+res://Camera2D.gd
 res://main.gd
+res://Control.gd
+res://hud.gd

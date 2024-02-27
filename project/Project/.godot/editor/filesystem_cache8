@@ -1,8 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708985155
+::res://::1709042539
 export_presets.cfg::TextFile::-1::1708973088::0::1::::<><>::
 icon.svg::CompressedTexture2D::2082030666282807346::1708972681::1708972689::1::::<><>::
-main.gd::GDScript::-1::1708983161::0::1::::<>Node2D<>::
-main.tscn::PackedScene::4296406233407315208::1708983192::0::1::::<><>::res://main.gd<>uid://k5icotw4uf5m::::res://player.tscn
-player.gd::GDScript::-1::1708983259::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::764309842249370508::1708983259::0::1::::<><>::res://player.gd<>uid://4ws0gp0s1e7s::::res://icon.svg
+main.gd::GDScript::-1::1709042286::0::1::::<>Node2D<>::
+main.tscn::PackedScene::4296406233407315208::1709042539::0::1::::<><>::res://main.gd<>uid://k5icotw4uf5m::::res://player.tscn
+player.gd::GDScript::-1::1708985723::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::764309842249370508::1709042559::0::1::::<><>::res://player.gd<>uid://4ws0gp0s1e7s::::res://icon.svg<>res://Camera2D.gd<>res://Control.gd
+Camera2D.gd::GDScript::-1::1709042384::0::1::::<>Camera2D<>::
+Control.gd::GDScript::-1::1709042498::0::1::::<>Control<>::
