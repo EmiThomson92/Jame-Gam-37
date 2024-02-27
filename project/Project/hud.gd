@@ -1,6 +1,7 @@
 extends Control
 @onready var character_body_2d = $"../.."
-@onready var num_jumps = $NUM_JUMPS
+@onready var status = $Status
+
 
 
 
@@ -14,7 +15,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var format_string = "NUM JUMPS:%s" % character_body_2d.jumps
-	num_jumps.clear()
-	num_jumps.append_text(format_string)
+	status.clear()
+	var format_string = "NUM JUMPS: %s" % character_body_2d.jumps
+	status.append_text(format_string)
+	format_string = "\nJUMPING: %s" % character_body_2d.is_jumping
+	format_string = format_string.to_upper()
+	status.append_text(format_string)
+	format_string = "\nAMMO: %s" % character_body_2d.ammo
+	status.append_text(format_string)
 	pass

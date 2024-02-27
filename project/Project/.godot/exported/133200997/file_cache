@@ -1,2 +1,6 @@
-res://main.tscn::e117ce9c75d00a01ae383a080cd84118::1709043293::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
-res://player.tscn::b2f41302bc38a716ed67e37b1745376a::1709043275::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
+res://main.tscn::80d92ea659d4c71e338d1173cad5ca3f::1709064003::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://platforms/slanted_platform.tscn::0b353c3d2de29fc48011260530be7a0c::1709061975::res://.godot/exported/133200997/export-ea44eb5b5e58f3b20be42636330f0438-slanted_platform.scn
+res://platforms/square_platform.tscn::a00a030ec316e6ccc784ab563bb986cd::1709061975::res://.godot/exported/133200997/export-ee6fde8594792f86b29add891d513d6e-square_platform.scn
+res://player/player.tscn::a1c75d775ffc1c9b0ba7f87a8e19d360::1709066704::res://.godot/exported/133200997/export-753d15e03e0182f9d550ac833b42bb41-player.scn
+res://player/snowball.tscn::5ed9e28384307b624f9f0ff8a0d75f1d::1709066704::res://.godot/exported/133200997/export-b6694110ea7ab42fad31032597cb9120-snowball.scn
+res://test_level.tscn::5d870ef02e363ae3f3cde3e7c30476d0::1709066704::res://.godot/exported/133200997/export-7d3e253c2a16ada73a9aac58bf8e0302-test_level.scn
