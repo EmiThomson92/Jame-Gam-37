@@ -1,14 +1,1 @@
-res://main.tscn
-res://player.tscn
-res://main.gd
-res://platform.tscn
-res://level 2.tscn
-res://platforms/square_platform.tscn
-res://platforms/slanted_platform.tscn
-res://test_level.tscn
-res://player.gd
-res://hud.gd
-res://player/snowball.tscn
 res://player/player.tscn
-res://player/snowball.gd
-res://player/player.gd
