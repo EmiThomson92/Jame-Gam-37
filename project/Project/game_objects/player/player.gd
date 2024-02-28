@@ -7,12 +7,14 @@ const JUMP_VELOCITY = -380.0
 const ACCEL = 500
 const NUM_JUMPS = 2
 const STARTING_AMMO = 5
+const MAX_HEALTH = 3
 
 var jumps = NUM_JUMPS
 var ammo = STARTING_AMMO
 var is_jumping = false
 var cant_fire := Timer.new()
 var facing_left = true
+var health = MAX_HEALTH
 
 #TODO Implementation of animation handler
 
@@ -77,3 +79,9 @@ func throw_snowball():
 			cant_fire.start(1)
 		else:
 			print_debug("out of ammo")
+
+func take_damage():
+	health -= 1
+	if health == 0:
+		print("ded")
+	

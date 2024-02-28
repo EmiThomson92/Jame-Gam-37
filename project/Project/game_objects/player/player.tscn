@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://dea0wku1i8vcj" path="res://Textures/player/walking/10.png" id="11_fy6cd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6v0y"]
-size = Vector2(40, 64)
+size = Vector2(40, 61)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e6u3w"]
 animations = [{
@@ -78,7 +78,7 @@ floor_snap_length = 25.0
 script = ExtResource("1_62ywx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(4, 0)
+position = Vector2(4, -1.5)
 shape = SubResource("RectangleShape2D_c6v0y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
