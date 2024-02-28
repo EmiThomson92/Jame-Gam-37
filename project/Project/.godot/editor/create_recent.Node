@@ -1,3 +1,4 @@
+TileMap
 AnimatedSprite2D
 ColorRect
 CollisionShape2D
@@ -6,10 +7,8 @@ Node2D
 StaticBody2D
 Node
 Polygon2D
-TileMap
 NinePatchRect
 Sprite2D
 TextureRect
 CollisionPolygon2D
 CanvasLayer
-Control

@@ -37,7 +37,7 @@ func _physics_process(delta):
 			animated_sprite_2d.animation = "walking"
 			animated_sprite_2d.flip_h = !facing_left
 	else:
-		velocity.x = move_toward(velocity.x, 0, (ACCEL *100) * delta)
+		velocity.x = move_toward(velocity.x, 0, (ACCEL *10) * delta)
 	if velocity.x == 0 and !is_jumping:
 		animated_sprite_2d.animation = "walking"
 		animated_sprite_2d.stop()
@@ -67,6 +67,7 @@ func handle_jump():
 		is_jumping = false	
 	if Input.is_action_just_released("ui_accept") and velocity.y < JUMP_VELOCITY/2:
 		velocity.y = move_toward(velocity.y, 0, 1000)
+
 func throw_snowball():
 	
 	if Input.is_action_just_pressed("fire"):
