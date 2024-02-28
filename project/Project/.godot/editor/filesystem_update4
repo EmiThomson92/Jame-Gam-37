@@ -1,6 +1,4 @@
-res://player/player.tscn
-res://player/snowball.tscn
-res://test_level.tscn
 res://game_objects/player/player.tscn
 res://game_objects/player/snowball.tscn
+res://test_level.tscn
 res://game_objects/player/player.gd

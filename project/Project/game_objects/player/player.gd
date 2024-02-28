@@ -12,6 +12,7 @@ var jumps = NUM_JUMPS
 var ammo = STARTING_AMMO
 var is_jumping = false
 var cant_fire := Timer.new()
+var facing_left = true
 
 #TODO Implementation of animation handler
 
@@ -34,12 +35,16 @@ func _physics_process(delta):
 		if velocity.x != 0 and !is_jumping:
 			animated_sprite_2d.play()
 			animated_sprite_2d.animation = "walking"
-			animated_sprite_2d.flip_h = velocity.x < 0
+			animated_sprite_2d.flip_h = !facing_left
 	else:
 		velocity.x = move_toward(velocity.x, 0, (ACCEL *100) * delta)
 	if velocity.x == 0 and !is_jumping:
 		animated_sprite_2d.animation = "walking"
 		animated_sprite_2d.stop()
+	if velocity.x > 0:
+		facing_left = true
+	elif velocity.x < 0:
+		facing_left = false
 	move_and_slide()
 	throw_snowball()
 	
@@ -53,9 +58,8 @@ func handle_jump():
 	elif Input.is_action_just_pressed("ui_accept") and jumps > 0:
 		velocity.y = JUMP_VELOCITY
 		jumps -= 1
-		animated_sprite_2d.animation = "jump"
-		animated_sprite_2d.set_frame_and_progress(0,0.0)
-		animated_sprite_2d.flip_h = velocity.x < 0
+		animated_sprite_2d.play("jump")
+		animated_sprite_2d.flip_h = !facing_left
 		if is_on_floor():
 			is_jumping = true
 	elif is_on_floor():
