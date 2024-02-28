@@ -4,4 +4,4 @@ res://game_objects/platforms/slanted_platform.tscn::5d1546640c8d1919bcbb33dd7166
 res://game_objects/platforms/square_platform.tscn::a00a030ec316e6ccc784ab563bb986cd::1709143011::res://.godot/exported/133200997/export-8e269ed5522bd1098e226b959bacbc90-square_platform.scn
 res://game_objects/player/player.tscn::cbd7450b6fffc92807aab6ccdb610b59::1709143011::res://.godot/exported/133200997/export-a4fdbf97c73805bf1c8dfcffbea0c8cb-player.scn
 res://game_objects/player/snowball.tscn::855e8cb11300735226791c3a3add2e34::1709134675::res://.godot/exported/133200997/export-88633c58e49da1a9452c0f6c8448cad8-snowball.scn
-res://game_objects/enemy.tscn::7c825744d274b56dee0edfd8c6223141::1709143144::res://.godot/exported/133200997/export-8020df062d2c1c46ade45fcb0e98cba0-enemy.scn
+res://game_objects/enemy.tscn::7c825744d274b56dee0edfd8c6223141::1709143332::res://.godot/exported/133200997/export-8020df062d2c1c46ade45fcb0e98cba0-enemy.scn
