@@ -1,0 +1,118 @@
+[gd_scene load_steps=19 format=3 uid="uid://k5icotw4uf5m"]
+
+[ext_resource type="Script" path="res://game_objects/player/player.gd" id="1_62ywx"]
+[ext_resource type="Texture2D" uid="uid://do1svrdqfffht" path="res://Textures/player/walking/1.png" id="2_4i35g"]
+[ext_resource type="Script" path="res://Camera2D.gd" id="3_qduf7"]
+[ext_resource type="Texture2D" uid="uid://x64dd5vbvvwd" path="res://Textures/player/walking/2.png" id="3_shakn"]
+[ext_resource type="Texture2D" uid="uid://1ewntdw7qgl5" path="res://Textures/player/jump/3.png" id="4_g33oj"]
+[ext_resource type="Script" path="res://hud.gd" id="4_mwovl"]
+[ext_resource type="Texture2D" uid="uid://cy26uikrfpyd0" path="res://Textures/player/walking/3.png" id="4_yc3r6"]
+[ext_resource type="Texture2D" uid="uid://ckcn65j2fq2em" path="res://Textures/player/walking/4.png" id="5_cw7ds"]
+[ext_resource type="Texture2D" uid="uid://dta5apsq1lui5" path="res://Textures/player/jump/4.png" id="5_wot2q"]
+[ext_resource type="Texture2D" uid="uid://dmu56e8xba4j2" path="res://Textures/player/jump/5.png" id="6_1duiv"]
+[ext_resource type="Texture2D" uid="uid://gxdw8g3j5g7" path="res://Textures/player/walking/5.png" id="6_hxtpn"]
+[ext_resource type="Texture2D" uid="uid://cenmjkkk0f3r7" path="res://Textures/player/walking/6.png" id="7_ptp23"]
+[ext_resource type="Texture2D" uid="uid://6ih01cowrjfg" path="res://Textures/player/walking/7.png" id="8_m7ep5"]
+[ext_resource type="Texture2D" uid="uid://kn4rk4p6qc4y" path="res://Textures/player/walking/8.png" id="9_54lgd"]
+[ext_resource type="Texture2D" uid="uid://dojp7he5dd0qv" path="res://Textures/player/walking/9.png" id="10_ho2h5"]
+[ext_resource type="Texture2D" uid="uid://dea0wku1i8vcj" path="res://Textures/player/walking/10.png" id="11_fy6cd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6v0y"]
+size = Vector2(40, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e6u3w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_g33oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wot2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1duiv")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4i35g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_shakn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yc3r6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cw7ds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hxtpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ptp23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m7ep5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_54lgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ho2h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fy6cd")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+floor_constant_speed = true
+floor_snap_length = 25.0
+script = ExtResource("1_62ywx")
+
+[node name="throwing_spot" type="Node2D" parent="."]
+position = Vector2(24, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_c6v0y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_e6u3w")
+animation = &"jump"
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D"]
+zoom = Vector2(2, 2)
+limit_left = -640
+limit_bottom = 768
+limit_smoothed = true
+script = ExtResource("3_qduf7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="hud" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("4_mwovl")
+
+[node name="Status" type="RichTextLabel" parent="CanvasLayer/hud"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.906
+anchor_top = 1.28
+anchor_right = 0.906
+anchor_bottom = 1.28
+offset_right = 150.0
+offset_bottom = 48.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 15
+text = "Num Jumps: 3
+IS JUMPING: "

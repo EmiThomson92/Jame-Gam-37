@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4alsvue34gli"]
+
+[ext_resource type="Script" path="res://game_objects/player/snowball.gd" id="1_htl1c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hgqh"]
+size = Vector2(16, 16)
+
+[node name="snowball" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_htl1c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_0hgqh")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D/CollisionShape2D"]
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
