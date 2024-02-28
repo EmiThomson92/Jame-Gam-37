@@ -37,7 +37,7 @@ func _physics_process(delta):
 			animated_sprite_2d.animation = "walking"
 			animated_sprite_2d.flip_h = !facing_left
 	else:
-		velocity.x = move_toward(velocity.x, 0, (ACCEL *10) * delta)
+		velocity.x = move_toward(velocity.x, 0, (ACCEL *1) * delta)
 	if velocity.x == 0 and !is_jumping:
 		animated_sprite_2d.animation = "walking"
 		animated_sprite_2d.stop()

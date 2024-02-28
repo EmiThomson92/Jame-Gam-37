@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cpcedyqge0b5e"]
+[gd_scene load_steps=8 format=3 uid="uid://cpcedyqge0b5e"]
 
 [ext_resource type="PackedScene" uid="uid://b26xgitownvip" path="res://game_objects/platforms/square_platform.tscn" id="1_gc206"]
 [ext_resource type="PackedScene" uid="uid://k5icotw4uf5m" path="res://game_objects/player/player.tscn" id="2_fydr5"]
 [ext_resource type="PackedScene" uid="uid://b8dd11o7wjmn4" path="res://game_objects/platforms/slanted_platform.tscn" id="3_s1lvu"]
 [ext_resource type="Texture2D" uid="uid://bd1vdacrko3yg" path="res://Textures/Luna Tile.png" id="4_ormok"]
+[ext_resource type="PackedScene" uid="uid://dcgs4vpwjvibp" path="res://game_objects/enemy.tscn" id="5_j7tsb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1smlr"]
 texture = ExtResource("4_ormok")
@@ -11,7 +12,6 @@ texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
-3:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -24,13 +24,14 @@ texture_region_size = Vector2i(64, 64)
 1:3/0 = 0
 2:3/0 = 0
 3:3/0 = 0
+3:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_2a1hs"]
 sources/0 = SubResource("TileSetAtlasSource_1smlr")
 
 [node name="main" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_fydr5")]
+[node name="player" parent="." instance=ExtResource("2_fydr5")]
 position = Vector2(32, 672)
 
 [node name="floating platform 1" type="Node2D" parent="."]
@@ -104,4 +105,7 @@ position = Vector2(225, 640)
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2a1hs")
 format = 2
-layer_0/tile_data = PackedInt32Array(2293785, 0, 0, 2293789, 65536, 0, 2293793, 65536, 0, 2293794, 131072, 0, 2424857, 0, 2, 2424861, 65536, 2, 2424865, 65536, 2, 2424866, 131072, 2, 2424846, 196608, 0, 2621451, 196608, 0, 2818056, 196608, 0, 2752510, 131072, 1, 2490366, 131072, 1, 2228222, 131072, 1, 1966078, 131072, 1, 1703934, 131072, 1, 1703930, 0, 1, 1966074, 0, 1, 2228218, 0, 1, 2490362, 0, 1, 2752506, 0, 1, 3211265, 65536, 2, 3211269, 65536, 2, 3276797, 65536, 2, 3276794, 0, 2, 3014650, 0, 1, 2949125, 65536, 0, 2949121, 65536, 0, 3014653, 65536, 0, 1638433, 196608, 1, 1703970, 196608, 1, 1638429, 65536, 0, 1638425, 0, 0, 1769497, 0, 2, 1769501, 65536, 2, 1769502, 65536, 2, 1769504, 131072, 2)
+layer_0/tile_data = PackedInt32Array(2293785, 0, 0, 2293789, 65536, 0, 2293793, 65536, 0, 2293794, 131072, 0, 2424857, 0, 2, 2424861, 65536, 2, 2424865, 65536, 2, 2424866, 131072, 2, 2424846, 196608, 0, 2621451, 196608, 0, 2818056, 196608, 0, 2752510, 131072, 1, 2490366, 131072, 1, 2228222, 131072, 1, 1966078, 131072, 1, 1703934, 131072, 1, 1703930, 0, 1, 1966074, 0, 1, 2228218, 0, 1, 2490362, 0, 1, 2752506, 0, 1, 3211265, 65536, 2, 3211269, 65536, 2, 3276797, 65536, 2, 3276794, 0, 2, 3014650, 0, 1, 2949125, 65536, 0, 2949121, 65536, 0, 3014653, 65536, 0, 1638433, 196608, 1, 1703970, 196608, 1, 1638429, 65536, 0, 1638425, 0, 0, 1769497, 0, 2, 1769501, 65536, 2, 1769502, 65536, 2, 1769504, 131072, 2, 2031629, 196608, 1)
+
+[node name="enemy" parent="." instance=ExtResource("5_j7tsb")]
+position = Vector2(1044, 640)

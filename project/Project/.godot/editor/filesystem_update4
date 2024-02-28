@@ -2,3 +2,7 @@ res://game_objects/player/player.tscn
 res://game_objects/player/snowball.tscn
 res://test_level.tscn
 res://game_objects/player/player.gd
+res://PathFollow2D.gd
+res://game_objects/platforms/square_platform.tscn
+res://game_objects/enemy.tscn
+res://game_objects/enemy.gd

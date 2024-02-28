@@ -1,23 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709135783
+::res://::1709137946
 Camera2D.gd::GDScript::-1::1709043601::0::1::::<>Camera2D<>::
 export_presets.cfg::TextFile::-1::1709133644::0::1::::<><>::
 hud.gd::GDScript::-1::1709066979::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::2082030666282807346::1708972681::1708972689::1::::<><>::
 main.gd::GDScript::-1::1709048649::0::1::::<>Node2D<>::
 main.tscn::PackedScene::4296406233407315208::1709133844::0::1::::<><>::res://main.gd<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn
-test_level.tscn::PackedScene::5830052288373804748::1709135783::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>uid://b8dd11o7wjmn4::::res://game_objects/platforms/slanted_platform.tscn<>uid://bd1vdacrko3yg::::res://Textures/Luna Tile.png
+test_level.tscn::PackedScene::5830052288373804748::1709137946::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>uid://b8dd11o7wjmn4::::res://game_objects/platforms/slanted_platform.tscn<>uid://bd1vdacrko3yg::::res://Textures/Luna Tile.png
 ::res://game_objects/::1709133844
 ::res://game_objects/platforms/::1709133844
 slanted_platform.tscn::PackedScene::4709075627348242351::1709133844::0::1::::<><>::
 square_platform.tscn::PackedScene::4346922828097002427::1709133844::0::1::::<><>::
-::res://game_objects/player/::1709135338
-player.gd::GDScript::-1::1709135338::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::764309842249370508::1709135338::0::1::::<><>::res://game_objects/player/player.gd<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>res://Camera2D.gd<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>res://hud.gd<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png
+::res://game_objects/player/::1709137945
+player.gd::GDScript::-1::1709137275::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::764309842249370508::1709137945::0::1::::<><>::res://game_objects/player/player.gd<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>res://Camera2D.gd<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>res://hud.gd<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png
 snowball.gd::GDScript::-1::1709133844::0::1::::<>Area2D<>::
 snowball.tscn::PackedScene::4422598314513507006::1709134675::0::1::::<><>::res://game_objects/player/snowball.gd
-::res://Textures/::1709136385
-Luna Tile.png::CompressedTexture2D::2651941454318520662::1709136384::1709136386::1::::<><>::
+::res://Textures/::1709138574
+Luna Tile.png::CompressedTexture2D::2651941454318520662::1709138574::1709138575::1::::<><>::
 ::res://Textures/player/::1709133844
 ::res://Textures/player/jump/::1709133844
 1.png::CompressedTexture2D::4466099489951547138::1709133844::1709133844::1::::<><>::
