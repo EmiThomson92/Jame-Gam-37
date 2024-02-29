@@ -17,6 +17,6 @@ func _process(delta):
 func _on_body_entered(body):
 	if body.name == "player":
 		body.jumps = 0
-		body.velocity = Vector2(-500,-500)
+		body.velocity = body.velocity * Vector2(1,-1)
 		body.take_damage()
 	pass # Replace with function body.

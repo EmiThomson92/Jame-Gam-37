@@ -8,3 +8,4 @@ res://scenes/playable_levels/goal.gd
 res://game_objects/enemy.tscn
 res://game_objects/player/player.tscn
 res://scenes/playable_levels/snowman.gd
+res://game_objects/enemy.gd

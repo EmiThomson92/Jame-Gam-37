@@ -1,3 +1,7 @@
+CPUParticles2D
+ParallaxLayer
+ParallaxBackground
+TextureRect
 AnimatedSprite2D
 ColorRect
 Area2D
@@ -9,6 +13,3 @@ Container
 CenterContainer
 PathFollow2D
 Path2D
-StaticBody2D
-AnimatableBody2D
-Node

@@ -105,7 +105,7 @@ shape = SubResource("RectangleShape2D_c6v0y")
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_e6u3w")
 animation = &"idle"
-frame_progress = 0.864044
+frame_progress = 0.570545
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D"]
 zoom = Vector2(2, 2)
