@@ -1,8 +1,32 @@
-[gd_scene load_steps=7 format=3 uid="uid://drtpbunyitsfd"]
+[gd_scene load_steps=12 format=3 uid="uid://drtpbunyitsfd"]
 
 [ext_resource type="PackedScene" uid="uid://k5icotw4uf5m" path="res://game_objects/player/player.tscn" id="1_bhp8j"]
 [ext_resource type="Texture2D" uid="uid://3jxqsyb27l5e" path="res://Textures/Luna Tile 2.png" id="1_rpkt0"]
+[ext_resource type="Texture2D" uid="uid://b6vr8dgmpmyd1" path="res://Textures/Tutorial Snowman/2.png" id="2_woif6"]
 [ext_resource type="Script" path="res://scenes/playable_levels/goal.gd" id="3_plbtw"]
+[ext_resource type="Texture2D" uid="uid://b8p47fkaenrlb" path="res://Textures/Tutorial Snowman/1.png" id="3_vq8st"]
+[ext_resource type="Script" path="res://scenes/playable_levels/snowman.gd" id="4_2ssv7"]
+[ext_resource type="Texture2D" uid="uid://bkei3y1q5h0x2" path="res://Textures/Tutorial Snowman/3.png" id="4_pnbpt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ue2cb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_woif6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vq8st")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pnbpt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vq8st")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cdsg3"]
 texture = ExtResource("1_rpkt0")
@@ -86,6 +110,13 @@ sources/1 = SubResource("TileSetAtlasSource_cdsg3")
 size = Vector2(64, 136)
 
 [node name="Level1" type="Node2D"]
+
+[node name="snowman" type="AnimatedSprite2D" parent="."]
+position = Vector2(1168, 200)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_ue2cb")
+frame_progress = 0.316634
+script = ExtResource("4_2ssv7")
 
 [node name="player" parent="." instance=ExtResource("1_bhp8j")]
 position = Vector2(-104, 496)

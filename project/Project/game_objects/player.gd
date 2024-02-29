@@ -41,8 +41,8 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, (ACCEL *1) * delta)
 	if velocity.x == 0 and !is_jumping:
-		animated_sprite_2d.animation = "walking"
-		animated_sprite_2d.stop()
+		animated_sprite_2d.animation = "idle"
+		animated_sprite_2d.play()
 	if velocity.x > 0:
 		facing_left = true
 	elif velocity.x < 0:
