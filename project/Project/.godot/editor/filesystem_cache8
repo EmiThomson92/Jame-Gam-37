@@ -1,26 +1,42 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709149722
-Camera2D.gd::GDScript::-1::1709043601::0::1::::<>Camera2D<>::
+::res://::1709222526
 export_presets.cfg::TextFile::-1::1709143365::0::1::::<><>::
+global_control.gd::GDScript::-1::1709221721::0::1::::<>Node<>::
 hud.gd::GDScript::-1::1709066979::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::2082030666282807346::1708972681::1708972689::1::::<><>::
 main.gd::GDScript::-1::1709048649::0::1::::<>Node2D<>::
 main.tscn::PackedScene::4296406233407315208::1709133844::0::1::::<><>::res://main.gd<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn
 PathFollow2D.gd::GDScript::-1::1709149180::0::1::::<>PathFollow2D<>::
-test_level.tscn::PackedScene::5830052288373804748::1709149431::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>uid://b8dd11o7wjmn4::::res://game_objects/platforms/slanted_platform.tscn<>uid://bd1vdacrko3yg::::res://Textures/Luna Tile.png<>res://PathFollow2D.gd<>uid://dcgs4vpwjvibp::::res://game_objects/enemy.tscn
-::res://game_objects/::1709149431
+player_variables.gd::GDScript::-1::1709221717::0::1::::<>Node<>::
+test_level.tscn::PackedScene::5830052288373804748::1709221786::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>uid://b8dd11o7wjmn4::::res://game_objects/platforms/slanted_platform.tscn<>uid://bd1vdacrko3yg::::res://Textures/Luna Tile.png<>res://PathFollow2D.gd<>uid://3jxqsyb27l5e::::res://Textures/Luna Tile 2.png<>uid://dcgs4vpwjvibp::::res://game_objects/enemy.tscn
+::res://game_objects/::1709222628
 enemy.gd::GDScript::-1::1709145265::0::1::::<>Node2D<>::
-enemy.tscn::PackedScene::7313171825947625225::1709149431::0::1::::<><>::res://game_objects/enemy.gd
-::res://game_objects/platforms/::1709149431
+enemy.tscn::PackedScene::7313171825947625225::1709221786::0::1::::<><>::res://game_objects/enemy.gd
+::res://game_objects/platforms/::1709223019
 slanted_platform.tscn::PackedScene::4709075627348242351::1709133844::0::1::::<><>::
-square_platform.tscn::PackedScene::4346922828097002427::1709149431::0::1::::<><>::
-::res://game_objects/player/::1709149449
+square_platform.tscn::PackedScene::4346922828097002427::1709223019::0::1::::<><>::
+::res://game_objects/player/::1709222319
+Camera2D.gd::GDScript::-1::1709043601::0::1::::<>Camera2D<>::
 player.gd::GDScript::-1::1709145235::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::764309842249370508::1709149449::0::1::::<><>::res://game_objects/player/player.gd<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>res://Camera2D.gd<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>res://hud.gd<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png
+player.tscn::PackedScene::764309842249370508::1709222319::0::1::::<><>::res://game_objects/player/player.gd<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>res://game_objects/player/Camera2D.gd<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>res://hud.gd<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png
 snowball.gd::GDScript::-1::1709133844::0::1::::<>Area2D<>::
 snowball.tscn::PackedScene::4422598314513507006::1709134675::0::1::::<><>::res://game_objects/player/snowball.gd
-::res://Textures/::1709138575
+::res://scenes/::1709222379
+main_menu.gd::GDScript::-1::1709221772::0::1::::<>Node2D<>::
+main_menu.tscn::PackedScene::1290939451678414645::1709222379::0::1::::<><>::uid://ci0gvqyqhymv7::::res://Textures/GUI/button.png<>res://scenes/main_menu.gd<>uid://dg4dnexurm8vw::::res://Textures/BG_01.png<>uid://dk1nwngr0vaeq::::res://Textures/Dragon_1.png
+::res://scenes/playable_levels/::1709223019
+level_1.tscn::PackedScene::8392609182589760205::1709223019::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>uid://3jxqsyb27l5e::::res://Textures/Luna Tile 2.png
+::res://Textures/::1709220671
+BG_01.png::CompressedTexture2D::7640467680630132884::1709220451::1709220453::1::::<><>::
+Dragon_1.png::CompressedTexture2D::7915653610316067440::1709220656::1709220671::1::::<><>::
+Luna Tile 2.png::CompressedTexture2D::1985293067765948284::1709153616::1709153618::1::::<><>::
 Luna Tile.png::CompressedTexture2D::2651941454318520662::1709138574::1709138575::1::::<><>::
+::res://Textures/GUI/::1709218670
+button.png::CompressedTexture2D::5386364242156744522::1709218580::1709218670::1::::<><>::
+::res://Textures/GUI/Heart/::1709218669
+heart_empty.png::CompressedTexture2D::9223247202574314132::1709218666::1709218669::1::::<><>::
+heart_full.png::CompressedTexture2D::378662343773195443::1709218611::1709218669::1::::<><>::
+heart_half.png::CompressedTexture2D::7157438300110449227::1709218652::1709218669::1::::<><>::
 ::res://Textures/player/::1709133844
 ::res://Textures/player/jump/::1709133844
 1.png::CompressedTexture2D::4466099489951547138::1709133844::1709133844::1::::<><>::

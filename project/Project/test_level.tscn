@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cpcedyqge0b5e"]
+[gd_scene load_steps=12 format=3 uid="uid://cpcedyqge0b5e"]
 
 [ext_resource type="PackedScene" uid="uid://b26xgitownvip" path="res://game_objects/platforms/square_platform.tscn" id="1_gc206"]
 [ext_resource type="PackedScene" uid="uid://k5icotw4uf5m" path="res://game_objects/player/player.tscn" id="2_fydr5"]
 [ext_resource type="PackedScene" uid="uid://b8dd11o7wjmn4" path="res://game_objects/platforms/slanted_platform.tscn" id="3_s1lvu"]
 [ext_resource type="Texture2D" uid="uid://bd1vdacrko3yg" path="res://Textures/Luna Tile.png" id="4_ormok"]
 [ext_resource type="Script" path="res://PathFollow2D.gd" id="5_5thki"]
+[ext_resource type="Texture2D" uid="uid://3jxqsyb27l5e" path="res://Textures/Luna Tile 2.png" id="5_4117x"]
 [ext_resource type="PackedScene" uid="uid://dcgs4vpwjvibp" path="res://game_objects/enemy.tscn" id="5_j7tsb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1smlr"]
@@ -27,8 +28,35 @@ texture_region_size = Vector2i(64, 64)
 3:3/0 = 0
 3:0/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j0vn5"]
+texture = ExtResource("5_4117x")
+separation = Vector2i(10, 10)
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_2a1hs"]
+tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_1smlr")
+sources/2 = SubResource("TileSetAtlasSource_j0vn5")
 
 [sub_resource type="Curve2D" id="Curve2D_rsh6b"]
 _data = {
@@ -112,7 +140,7 @@ position = Vector2(225, 640)
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_2a1hs")
 format = 2
-layer_0/tile_data = PackedInt32Array(2293785, 0, 0, 2293789, 65536, 0, 2293793, 65536, 0, 2293794, 131072, 0, 2424857, 0, 2, 2424861, 65536, 2, 2424865, 65536, 2, 2424866, 131072, 2, 2424846, 196608, 0, 2621451, 196608, 0, 2818056, 196608, 0, 2752510, 131072, 1, 2490366, 131072, 1, 2228222, 131072, 1, 1966078, 131072, 1, 1703934, 131072, 1, 1703930, 0, 1, 1966074, 0, 1, 2228218, 0, 1, 2490362, 0, 1, 2752506, 0, 1, 3211265, 65536, 2, 3211269, 65536, 2, 3276797, 65536, 2, 3276794, 0, 2, 3014650, 0, 1, 2949125, 65536, 0, 2949121, 65536, 0, 3014653, 65536, 0, 1638433, 196608, 1, 1703970, 196608, 1, 1638429, 65536, 0, 1638425, 0, 0, 1769497, 0, 2, 1769501, 65536, 2, 1769502, 65536, 2, 1769504, 131072, 2, 2031629, 196608, 1)
+layer_0/tile_data = PackedInt32Array(196621, 196610, 1, 131084, 196610, 1, 65547, 196610, 1, 131083, 65538, 1, 196620, 65538, 1, 196619, 65538, 1, 65546, 65538, 1, 131082, 65538, 1, 196618, 65538, 1, 10, 196610, 1, 7, 2, 0, 8, 65538, 0, 9, 65538, 0, 65543, 2, 1, 131079, 2, 1, 196615, 2, 1, 262151, 2, 1, 262152, 65538, 1, 262157, 262146, 1, 262156, 65538, 1, 262155, 65538, 1, 262154, 65538, 1, 262153, 65538, 1, 196617, 65538, 1, 196616, 65538, 1, 131080, 65538, 1, 131081, 65538, 1, 65545, 65538, 1, 65544, 65538, 1, 262158, 65538, 0, 327695, 131074, 2, 262159, 131074, 0, 327694, 65538, 2, 327693, 65538, 2, 327692, 65538, 2, 327691, 65538, 2, 327690, 65538, 2, 327689, 65538, 2, 327688, 65538, 2, 327687, 2, 2, 65551, 196610, 0, 65552, 196610, 1, 131088, 196610, 2, 131087, 196610, 3, 655362, 196610, 0, 589827, 196610, 0, 524298, 2, 0, 524299, 65538, 0, 524300, 131074, 0, 524296, 131074, 0, 524295, 65538, 0, 524294, 2, 0, 589831, 65538, 2, 589830, 2, 2, 589832, 131074, 2, 720896, 65538, 0, 720897, 65538, 0, 720898, 262146, 3, 720899, 65538, 1, 720900, 65538, 0, 720901, 65538, 0, 720902, 65538, 0, 720903, 65538, 0, 655363, 262146, 3, 720904, 65538, 0, 720905, 65538, 0, 720906, 65538, 0, 720907, 65538, 0, 720908, 65538, 0, 720909, 65538, 0, 720910, 65538, 0, 720911, 65538, 0, 720912, 65538, 0, 720913, 65538, 0, 720914, 65538, 0, 720895, 131074, 1, 786431, 262146, 1, 655359, 131074, 1, 589823, 131074, 1, 524287, 131074, 1, 458751, 131074, 1, 393215, 131074, 1, 327679, 131074, 1, 262143, 131074, 1)
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(1044, 640)
