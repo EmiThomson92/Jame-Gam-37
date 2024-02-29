@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://snlt4j30ldpd"]
+
+[ext_resource type="Texture2D" uid="uid://ci0gvqyqhymv7" path="res://Textures/GUI/button.png" id="1_1dlqr"]
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_h0y1r"]
+[ext_resource type="Texture2D" uid="uid://dg4dnexurm8vw" path="res://Textures/BG_01.png" id="2_mpafj"]
+[ext_resource type="Texture2D" uid="uid://dk1nwngr0vaeq" path="res://Textures/Dragon_1.png" id="3_7s2hx"]
+[ext_resource type="Texture2D" uid="uid://cslpr2nmeohmp" path="res://Textures/Dragon_2.png" id="5_kqnm7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8kdcn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_7s2hx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_kqnm7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="main_menu" type="Node2D"]
+position = Vector2(0, -3)
+script = ExtResource("1_h0y1r")
+
+[node name="Bg01" type="Sprite2D" parent="."]
+position = Vector2(644, 385)
+scale = Vector2(0.540187, 0.540187)
+texture = ExtResource("2_mpafj")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_right = 6400.0
+offset_bottom = 3840.0
+scale = Vector2(0.2, 0.2)
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_1dlqr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer"]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.513726, 0.568627, 0.568627, 1)
+theme_override_font_sizes/normal_font_size = 300
+bbcode_enabled = true
+text = "[center]START[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="Container" type="Control" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Dragon1" type="AnimatedSprite2D" parent="CenterContainer/Container"]
+position = Vector2(-1680, 0)
+sprite_frames = SubResource("SpriteFrames_8kdcn")
+frame_progress = 0.133146
+
+[node name="Container2" type="Control" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Dragon1" type="AnimatedSprite2D" parent="CenterContainer/Container2"]
+position = Vector2(1680, 0)
+sprite_frames = SubResource("SpriteFrames_8kdcn")
+frame_progress = 0.496747
+flip_h = true
+
+[connection signal="mouse_entered" from="CenterContainer/TextureButton" to="." method="_on_texture_button_mouse_entered"]
+[connection signal="pressed" from="CenterContainer/TextureButton" to="." method="_on_texture_button_pressed"]
