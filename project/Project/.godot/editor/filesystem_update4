@@ -9,3 +9,6 @@ res://game_objects/enemy.tscn
 res://game_objects/player/player.tscn
 res://scenes/playable_levels/snowman.gd
 res://game_objects/enemy.gd
+res://scenes/playable_levels/level_1.gd
+res://global_control.gd
+res://test_level.gd

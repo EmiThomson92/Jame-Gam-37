@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://drtpbunyitsfd"]
+[gd_scene load_steps=15 format=3 uid="uid://drtpbunyitsfd"]
 
 [ext_resource type="Texture2D" uid="uid://dg4dnexurm8vw" path="res://Textures/BG_01.png" id="1_57e8b"]
 [ext_resource type="PackedScene" uid="uid://k5icotw4uf5m" path="res://game_objects/player/player.tscn" id="1_bhp8j"]
+[ext_resource type="Script" path="res://scenes/playable_levels/level_1.gd" id="1_o3mgw"]
 [ext_resource type="Texture2D" uid="uid://3jxqsyb27l5e" path="res://Textures/Luna Tile 2.png" id="1_rpkt0"]
 [ext_resource type="Texture2D" uid="uid://b6vr8dgmpmyd1" path="res://Textures/Tutorial Snowman/2.png" id="2_woif6"]
 [ext_resource type="Script" path="res://scenes/playable_levels/goal.gd" id="3_plbtw"]
@@ -112,6 +113,7 @@ sources/1 = SubResource("TileSetAtlasSource_cdsg3")
 size = Vector2(64, 136)
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_o3mgw")
 
 [node name="Bg01" type="Sprite2D" parent="."]
 texture_filter = 6
@@ -131,6 +133,16 @@ script = ExtResource("4_2ssv7")
 
 [node name="player" parent="." instance=ExtResource("1_bhp8j")]
 position = Vector2(-104, 496)
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(632, -496)
+amount = 1728
+lifetime = 30.0
+preprocess = 30.0
+texture = ExtResource("9_x53od")
+emission_shape = 3
+emission_rect_extents = Vector2(2000, 1)
+gravity = Vector2(-15.76, 30)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(1, 0)
@@ -152,15 +164,5 @@ offset_top = 128.0
 offset_right = 1472.0
 offset_bottom = 264.0
 color = Color(1, 0, 0, 0.698039)
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2(632, -496)
-amount = 1728
-lifetime = 30.0
-preprocess = 30.0
-texture = ExtResource("9_x53od")
-emission_shape = 3
-emission_rect_extents = Vector2(2000, 1)
-gravity = Vector2(-15.76, 30)
 
 [connection signal="body_entered" from="goal" to="goal" method="_on_body_entered"]

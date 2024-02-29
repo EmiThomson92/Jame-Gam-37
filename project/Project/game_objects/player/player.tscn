@@ -1,11 +1,14 @@
-[gd_scene load_steps=22 format=3 uid="uid://k5icotw4uf5m"]
+[gd_scene load_steps=28 format=3 uid="uid://k5icotw4uf5m"]
 
 [ext_resource type="Script" path="res://game_objects/player.gd" id="1_62ywx"]
 [ext_resource type="Texture2D" uid="uid://do1svrdqfffht" path="res://Textures/player/walking/1.png" id="2_4i35g"]
 [ext_resource type="Texture2D" uid="uid://bpx1k2swwfv4d" path="res://Textures/player/Idle/1.png" id="2_pobst"]
+[ext_resource type="Texture2D" uid="uid://dwn23dit2leh5" path="res://Textures/player/Hurt/1.png" id="2_uxaqs"]
 [ext_resource type="Texture2D" uid="uid://ujos18qccrcc" path="res://Textures/player/Idle/2.png" id="3_7diqa"]
 [ext_resource type="Script" path="res://game_objects/player/Camera2D.gd" id="3_qduf7"]
+[ext_resource type="Texture2D" uid="uid://cshel7uoipd02" path="res://Textures/player/Hurt/2.png" id="3_qyxwx"]
 [ext_resource type="Texture2D" uid="uid://x64dd5vbvvwd" path="res://Textures/player/walking/2.png" id="3_shakn"]
+[ext_resource type="Texture2D" uid="uid://bq5vdj5ykuppv" path="res://Textures/player/Hurt/3.png" id="4_c530u"]
 [ext_resource type="Texture2D" uid="uid://1ewntdw7qgl5" path="res://Textures/player/jump/3.png" id="4_g33oj"]
 [ext_resource type="Script" path="res://hud.gd" id="4_mwovl"]
 [ext_resource type="Texture2D" uid="uid://ckorv6b5qx1vp" path="res://Textures/player/Idle/3.png" id="4_tvv7l"]
@@ -19,12 +22,28 @@
 [ext_resource type="Texture2D" uid="uid://kn4rk4p6qc4y" path="res://Textures/player/walking/8.png" id="9_54lgd"]
 [ext_resource type="Texture2D" uid="uid://dojp7he5dd0qv" path="res://Textures/player/walking/9.png" id="10_ho2h5"]
 [ext_resource type="Texture2D" uid="uid://dea0wku1i8vcj" path="res://Textures/player/walking/10.png" id="11_fy6cd"]
+[ext_resource type="Texture2D" uid="uid://fnorpt1byfgd" path="res://Textures/GUI/Heart/heart_full.png" id="20_17wur"]
+[ext_resource type="Texture2D" uid="uid://d4n2sfgeug1q3" path="res://Textures/GUI/Heart/heart_empty.png" id="21_h7py1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6v0y"]
 size = Vector2(40, 61)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e6u3w"]
 animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_uxaqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qyxwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c530u")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_pobst")
@@ -92,6 +111,20 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_52myj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_17wur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_h7py1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="player" type="CharacterBody2D"]
 floor_constant_speed = true
 floor_snap_length = 25.0
@@ -104,8 +137,8 @@ shape = SubResource("RectangleShape2D_c6v0y")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_e6u3w")
-animation = &"idle"
-frame_progress = 0.570545
+animation = &"hurt"
+autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D"]
 zoom = Vector2(2, 2)
@@ -134,3 +167,31 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 15
 text = "Num Jumps: 3
 IS JUMPING: "
+
+[node name="Heart 1" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
+position = Vector2(121, 15)
+rotation = -0.112835
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_52myj")
+frame_progress = 0.428996
+
+[node name="Heart 2" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
+position = Vector2(151, 15)
+rotation = 0.129062
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_52myj")
+frame_progress = 0.428996
+
+[node name="Heart 3" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
+position = Vector2(184, 15)
+rotation = 0.17595
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_52myj")
+frame_progress = 0.428996
+
+[node name="portal" type="ColorRect" parent="CanvasLayer/hud"]
+layout_mode = 0
+offset_left = 222.0
+offset_right = 262.0
+offset_bottom = 40.0
+color = Color(1, 0, 0, 1)

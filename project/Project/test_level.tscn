@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://cpcedyqge0b5e"]
+[gd_scene load_steps=13 format=3 uid="uid://cpcedyqge0b5e"]
 
 [ext_resource type="PackedScene" uid="uid://b26xgitownvip" path="res://game_objects/platforms/square_platform.tscn" id="1_gc206"]
+[ext_resource type="Script" path="res://test_level.gd" id="1_uxi86"]
 [ext_resource type="PackedScene" uid="uid://k5icotw4uf5m" path="res://game_objects/player/player.tscn" id="2_fydr5"]
 [ext_resource type="PackedScene" uid="uid://b8dd11o7wjmn4" path="res://game_objects/platforms/slanted_platform.tscn" id="3_s1lvu"]
 [ext_resource type="Texture2D" uid="uid://bd1vdacrko3yg" path="res://Textures/Luna Tile.png" id="4_ormok"]
@@ -65,6 +66,7 @@ _data = {
 point_count = 2
 
 [node name="main" type="Node2D"]
+script = ExtResource("1_uxi86")
 
 [node name="player" parent="." instance=ExtResource("2_fydr5")]
 position = Vector2(32, 672)
@@ -151,4 +153,4 @@ position = Vector2(-57, 24)
 loop = false
 script = ExtResource("5_5thki")
 
-[node name="enemy" parent="Path2D/PathFollow2D" instance=ExtResource("5_j7tsb")]
+[node name="enemy" parent="Path2D/PathFollow2D" groups=["enemy"] instance=ExtResource("5_j7tsb")]
