@@ -57,6 +57,8 @@ func _physics_process(delta):
 	if is_hurt:
 		if animated_sprite_2d.frame == 2:
 			is_hurt = false
+	if Input.is_action_just_pressed("take_damage"):
+		take_damage()
 	move_and_slide()
 	throw_snowball()
 	hud_update()
