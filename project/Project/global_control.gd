@@ -1,10 +1,13 @@
 extends Node
 var level = 0
+var levels = {}
 var current_scene = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
+	levels["main_menu"] = "res://scenes/main_menu.tscn"
+	levels["level_1"] = "res://scenes/playable_levels/level_1.tscn"
 	pass # Replace with function body.
 
 
@@ -27,6 +30,7 @@ func goto_scene(path):
 
 func _deferred_goto_scene(path):
 	# It is now safe to remove the current scene.
+	print_debug(current_scene)
 	current_scene.free()
 
 	# Load the new scene.
@@ -40,3 +44,6 @@ func _deferred_goto_scene(path):
 
 	# Optionally, to make it compatible with the SceneTree.change_scene_to_file() API.
 	get_tree().current_scene = current_scene
+
+func _respawn(level):
+	GlobalControl.goto_scene(levels[level])

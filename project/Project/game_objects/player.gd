@@ -57,6 +57,8 @@ func _physics_process(delta):
 	if is_hurt:
 		if animated_sprite_2d.frame == 2:
 			is_hurt = false
+			if health == 0:
+				GlobalControl._respawn(GlobalControl.level)
 	if Input.is_action_just_pressed("take_damage"):
 		take_damage()
 	move_and_slide()
@@ -97,15 +99,15 @@ func take_damage():
 	health -= 1
 	animated_sprite_2d.play("hurt")
 	is_hurt = true
-	if health == 0:
-		print("ded")
 	
 func hud_update():
 	if health < 3:
-		heart_3.frame = 21
+		heart_3.frame = 1
 	if health < 2:
 		heart_2.frame = 1
 	if health < 1:
 		heart_1.frame = 1
 	if level_clear == true:
-		portal.color = Color("green")
+		portal.frame = 1
+	else:
+		portal.frame = 0

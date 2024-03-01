@@ -153,4 +153,4 @@ position = Vector2(-57, 24)
 loop = false
 script = ExtResource("5_5thki")
 
-[node name="enemy" parent="Path2D/PathFollow2D" groups=["enemy"] instance=ExtResource("5_j7tsb")]
+[node name="enemy" parent="Path2D/PathFollow2D" instance=ExtResource("5_j7tsb")]

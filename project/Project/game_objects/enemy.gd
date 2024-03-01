@@ -2,6 +2,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	add_to_group("enemy", true)
 	pass # Replace with function body.
 
 
@@ -14,15 +15,21 @@ func _process(delta):
 
 
 
-func _on_body_entered(body):
+
+
+func _on_hit(body):
 	if body.name == "player":
+		print_debug()
 		body.jumps = 0
 		print_debug(body.velocity)
-		if body.velocity.x > 0:
+		if body.position.x <= position.x:
 			body.velocity = Vector2(-250,-250)
-		elif body.velocity.x < 0:
+		elif body.position.x > position.x:
 			body.velocity = Vector2(250,-250)
 		body.take_damage()
-		queue_free()
-		
 	pass # Replace with function body.
+
+func _on_hurt(body):
+	body.jumps = 0
+	body.velocity = body.velocity * Vector2(1,-1.2)
+	queue_free()

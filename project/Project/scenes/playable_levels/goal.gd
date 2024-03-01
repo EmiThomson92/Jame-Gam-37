@@ -18,5 +18,5 @@ func _process(delta):
 func _on_body_entered(body):
 	if body.name == "player" and level_1.level_clear == true:
 		print_debug("touch")
-		GlobalControl.goto_scene("res://scenes/main_menu.tscn")
+		GlobalControl._respawn("main_menu")
 	pass # Replace with function body.

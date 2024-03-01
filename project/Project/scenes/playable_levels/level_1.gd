@@ -1,13 +1,16 @@
 extends Node2D
 @onready var player = $player
 
-var level_clear = true
+var level_clear = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	GlobalControl.level = "level_1"
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	player.level_clear = level_clear
+	if !get_tree().has_group("enemy"):
+		level_clear = true
 	pass

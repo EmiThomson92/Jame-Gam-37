@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://k5icotw4uf5m"]
+[gd_scene load_steps=32 format=3 uid="uid://k5icotw4uf5m"]
 
 [ext_resource type="Script" path="res://game_objects/player.gd" id="1_62ywx"]
 [ext_resource type="Texture2D" uid="uid://do1svrdqfffht" path="res://Textures/player/walking/1.png" id="2_4i35g"]
@@ -24,6 +24,9 @@
 [ext_resource type="Texture2D" uid="uid://dea0wku1i8vcj" path="res://Textures/player/walking/10.png" id="11_fy6cd"]
 [ext_resource type="Texture2D" uid="uid://fnorpt1byfgd" path="res://Textures/GUI/Heart/heart_full.png" id="20_17wur"]
 [ext_resource type="Texture2D" uid="uid://d4n2sfgeug1q3" path="res://Textures/GUI/Heart/heart_empty.png" id="21_h7py1"]
+[ext_resource type="Texture2D" uid="uid://ci0gvqyqhymv7" path="res://Textures/GUI/button.png" id="23_l0uqo"]
+[ext_resource type="Texture2D" uid="uid://w2cumdx803ha" path="res://Textures/GUI/Portal/portal_off.png" id="25_ir6xb"]
+[ext_resource type="Texture2D" uid="uid://dbsodhb1hs527" path="res://Textures/GUI/Portal/portal_on.png" id="26_ityij"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c6v0y"]
 size = Vector2(40, 61)
@@ -125,6 +128,20 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_jx1oh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_ir6xb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ityij")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="player" type="CharacterBody2D"]
 floor_constant_speed = true
 floor_snap_length = 25.0
@@ -154,44 +171,33 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("4_mwovl")
 
-[node name="Status" type="RichTextLabel" parent="CanvasLayer/hud"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.906
-anchor_top = 1.28
-anchor_right = 0.906
-anchor_bottom = 1.28
-offset_right = 150.0
-offset_bottom = 48.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 15
-text = "Num Jumps: 3
-IS JUMPING: "
+[node name="Button" type="Sprite2D" parent="CanvasLayer/hud"]
+position = Vector2(146, 49)
+scale = Vector2(0.212207, 0.132207)
+texture = ExtResource("23_l0uqo")
 
 [node name="Heart 1" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
-position = Vector2(121, 15)
+position = Vector2(55.457, 43.3319)
 rotation = -0.112835
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_52myj")
 frame_progress = 0.428996
 
 [node name="Heart 2" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
-position = Vector2(151, 15)
+position = Vector2(114, 43.3319)
 rotation = 0.129062
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_52myj")
 frame_progress = 0.428996
 
 [node name="Heart 3" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
-position = Vector2(184, 15)
+position = Vector2(175, 43.3319)
 rotation = 0.17595
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_52myj")
 frame_progress = 0.428996
 
-[node name="portal" type="ColorRect" parent="CanvasLayer/hud"]
-layout_mode = 0
-offset_left = 222.0
-offset_right = 262.0
-offset_bottom = 40.0
-color = Color(1, 0, 0, 1)
+[node name="portal" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
+position = Vector2(241, 51)
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_jx1oh")

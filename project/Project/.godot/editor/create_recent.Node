@@ -1,11 +1,11 @@
-ColorRect
 AnimatedSprite2D
+Area2D
+CollisionShape2D
+ColorRect
 CPUParticles2D
 ParallaxLayer
 ParallaxBackground
 TextureRect
-Area2D
-CollisionShape2D
 Node2D
 TileMap
 Control
