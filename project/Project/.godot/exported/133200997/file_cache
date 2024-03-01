@@ -5,5 +5,5 @@ res://game_objects/platforms/square_platform.tscn::a00a030ec316e6ccc784ab563bb98
 res://game_objects/player/player.tscn::112d8518cf6bbb093087fcbc352e3358::1709284276::res://.godot/exported/133200997/export-a4fdbf97c73805bf1c8dfcffbea0c8cb-player.scn
 res://game_objects/player/snowball.tscn::855e8cb11300735226791c3a3add2e34::1709134675::res://.godot/exported/133200997/export-88633c58e49da1a9452c0f6c8448cad8-snowball.scn
 res://game_objects/enemy.tscn::d4d5d6c1a2882bfe201525f4093ffbd2::1709278419::res://.godot/exported/133200997/export-8020df062d2c1c46ade45fcb0e98cba0-enemy.scn
-res://scenes/playable_levels/level_1.tscn::8506c43be2764e50774bb271c84de46c::1709284276::res://.godot/exported/133200997/export-28b20b8052ff621d007cf35aba98877c-level_1.scn
+res://scenes/playable_levels/level_1.tscn::8506c43be2764e50774bb271c84de46c::1709284555::res://.godot/exported/133200997/export-28b20b8052ff621d007cf35aba98877c-level_1.scn
 res://scenes/main_menu.tscn::3222e51e5a8f5eff9fec0f1231d22250::1709284276::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
