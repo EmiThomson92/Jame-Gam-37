@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709293643
-export_presets.cfg::TextFile::-1::1709293459::0::1::::<><>::
+::res://::1709294992
+export_presets.cfg::TextFile::-1::1709294012::0::1::::<><>::
 global_control.gd::GDScript::-1::1709289022::0::1::::<>Node<>::
 hud.gd::GDScript::-1::1709282128::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::2082030666282807346::1708972681::1708972689::1::::<><>::
@@ -9,28 +9,69 @@ main.tscn::PackedScene::4296406233407315208::1709133844::0::1::::<><>::res://mai
 PathFollow2D.gd::GDScript::-1::1709149180::0::1::::<>PathFollow2D<>::
 player_variables.gd::GDScript::-1::1709221717::0::1::::<>Node<>::
 test_level.gd::GDScript::-1::1709234992::0::1::::<>Node2D<>::
-test_level.tscn::PackedScene::5830052288373804748::1709293192::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>res://test_level.gd<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>uid://b8dd11o7wjmn4::::res://game_objects/platforms/slanted_platform.tscn<>uid://bd1vdacrko3yg::::res://Textures/Luna Tile.png<>res://PathFollow2D.gd<>uid://3jxqsyb27l5e::::res://Textures/Luna Tile 2.png<>uid://dcgs4vpwjvibp::::res://game_objects/enemy.tscn
-::res://game_objects/::1709293192
+test_level.tscn::PackedScene::5830052288373804748::1709294913::0::1::::<><>::uid://b26xgitownvip::::res://game_objects/platforms/square_platform.tscn<>res://test_level.gd<>uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>uid://b8dd11o7wjmn4::::res://game_objects/platforms/slanted_platform.tscn<>uid://bd1vdacrko3yg::::res://Textures/Luna Tile.png<>res://PathFollow2D.gd<>uid://3jxqsyb27l5e::::res://Textures/Luna Tile 2.png<>uid://dcgs4vpwjvibp::::res://game_objects/enemy.tscn
+::res://Gallery Ref/::1709295013
+::res://Gallery Ref/Auri/::1709295053
+::res://Gallery Ref/Auri/cutscenes/::1709294840
+1 - 1.png::CompressedTexture2D::3073904549660215444::1709200489::1709295059::1::::<><>::
+1 - 2.png::CompressedTexture2D::1654137653113356456::1709200536::1709295059::1::::<><>::
+1 - 3.png::CompressedTexture2D::5846982717652528967::1709200645::1709295059::1::::<><>::
+2 - 1.png::CompressedTexture2D::7244417988252087468::1709233713::1709295059::1::::<><>::
+2 - 2.png::CompressedTexture2D::5434526322271919668::1709234035::1709295060::1::::<><>::
+2 - 3.png::CompressedTexture2D::130371382849685576::1709234320::1709295060::1::::<><>::
+2 - 4.png::CompressedTexture2D::8106156018131710297::1709234375::1709295059::1::::<><>::
+2 - 5.png::CompressedTexture2D::8123060842720269814::1709234637::1709295061::1::::<><>::
+bg.png::CompressedTexture2D::4774251996826140355::1709200696::1709295060::1::::<><>::
+::res://Gallery Ref/Auri/Idle/::1709294756
+1.png::CompressedTexture2D::593385388718517044::1709216528::1709295060::1::::<><>::
+2.png::CompressedTexture2D::8199860130208163090::1709217165::1709295060::1::::<><>::
+3.png::CompressedTexture2D::5009238465196457108::1709217199::1709295061::1::::<><>::
+::res://Gallery Ref/Auri/jump/::1709294777
+1.png::CompressedTexture2D::433813954426141705::1709124586::1709295061::1::::<><>::
+2.png::CompressedTexture2D::5784357414368949603::1709124702::1709295061::1::::<><>::
+3.png::CompressedTexture2D::2112954352326455438::1709124802::1709295061::1::::<><>::
+4.png::CompressedTexture2D::8739219140850163044::1709124930::1709295061::1::::<><>::
+5.png::CompressedTexture2D::1492319463312461063::1709125056::1709295061::1::::<><>::
+::res://Gallery Ref/Auri/mush/::1709294790
+1.png::CompressedTexture2D::3897145083202134255::1709285421::1709295058::1::::<><>::
+2.png::CompressedTexture2D::8039997147894194251::1709285429::1709295058::1::::<><>::
+3.png::CompressedTexture2D::7788865048385214457::1709285438::1709295058::1::::<><>::
+::res://Gallery Ref/Auri/run/::1709294763
+1.png::CompressedTexture2D::5712235067947544119::1709122757::1709295057::1::::<><>::
+2.png::CompressedTexture2D::3486916071823224144::1709122772::1709295057::1::::<><>::
+3.png::CompressedTexture2D::5498974903939896981::1709122743::1709295057::1::::<><>::
+4.png::CompressedTexture2D::2259170608616422486::1709122802::1709295057::1::::<><>::
+5.png::CompressedTexture2D::203789264459955970::1709122827::1709295057::1::::<><>::
+6.png::CompressedTexture2D::4209040855588272488::1709122856::1709295057::1::::<><>::
+7.png::CompressedTexture2D::6857657944177200433::1709122885::1709295057::1::::<><>::
+8.png::CompressedTexture2D::7173431742272686708::1709122935::1709295057::1::::<><>::
+9.png::CompressedTexture2D::5829744013874732817::1709122960::1709295057::1::::<><>::
+10.png::CompressedTexture2D::1470669872341063541::1709123057::1709295057::1::::<><>::
+::res://Gallery Ref/Auri/Tutorial Snowman/::1709294856
+1.png::CompressedTexture2D::1479978213160382897::1709221880::1709295057::1::::<><>::
+2.png::CompressedTexture2D::745461888351210331::1709221905::1709295057::1::::<><>::
+3.png::CompressedTexture2D::6292417204872075419::1709221944::1709295057::1::::<><>::
+::res://game_objects/::1709294913
 enemy.gd::GDScript::-1::1709288398::0::1::::<>Node2D<>::
-enemy.tscn::PackedScene::7313171825947625225::1709293192::0::1::::<><>::res://game_objects/enemy.gd
+enemy.tscn::PackedScene::7313171825947625225::1709294913::0::1::::<><>::res://game_objects/enemy.gd
 player.gd::GDScript::-1::1709288384::0::1::::<>CharacterBody2D<>::
-::res://game_objects/platforms/::1709293192
+::res://game_objects/platforms/::1709294913
 slanted_platform.tscn::PackedScene::4709075627348242351::1709133844::0::1::::<><>::
-square_platform.tscn::PackedScene::4346922828097002427::1709293192::0::1::::<><>::
-::res://game_objects/player/::1709293192
+square_platform.tscn::PackedScene::4346922828097002427::1709294913::0::1::::<><>::
+::res://game_objects/player/::1709294913
 Camera2D.gd::GDScript::-1::1709043601::0::1::::<>Camera2D<>::
-player.tscn::PackedScene::764309842249370508::1709293192::0::1::::<><>::res://game_objects/player.gd<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>uid://bpx1k2swwfv4d::::res://Textures/1.png<>uid://dwn23dit2leh5::::res://Textures/player/Hurt/1.png<>uid://ujos18qccrcc::::res://Textures/2.png<>res://game_objects/player/Camera2D.gd<>uid://cshel7uoipd02::::res://Textures/player/Hurt/2.png<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://bq5vdj5ykuppv::::res://Textures/player/Hurt/3.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>res://hud.gd<>uid://ckorv6b5qx1vp::::res://Textures/3.png<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png<>uid://fnorpt1byfgd::::res://Textures/GUI/Heart/heart_full.png<>uid://d4n2sfgeug1q3::::res://Textures/GUI/Heart/heart_empty.png<>uid://ci0gvqyqhymv7::::res://Textures/GUI/button.png<>uid://w2cumdx803ha::::res://Textures/GUI/Portal/portal_off.png<>uid://dbsodhb1hs527::::res://Textures/GUI/Portal/portal_on.png
+player.tscn::PackedScene::764309842249370508::1709294913::0::1::::<><>::res://game_objects/player.gd<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>uid://dwn23dit2leh5::::res://Textures/player/Hurt/1.png<>res://game_objects/player/Camera2D.gd<>uid://cshel7uoipd02::::res://Textures/player/Hurt/2.png<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://bq5vdj5ykuppv::::res://Textures/player/Hurt/3.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>res://hud.gd<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://bpx1k2swwfv4d::::res://Textures/player/Idle/1.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://ujos18qccrcc::::res://Textures/player/Idle/2.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://ckorv6b5qx1vp::::res://Textures/player/Idle/3.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png<>uid://fnorpt1byfgd::::res://Textures/GUI/Heart/heart_full.png<>uid://d4n2sfgeug1q3::::res://Textures/GUI/Heart/heart_empty.png<>uid://ci0gvqyqhymv7::::res://Textures/GUI/button.png<>uid://w2cumdx803ha::::res://Textures/GUI/Portal/portal_off.png<>uid://dbsodhb1hs527::::res://Textures/GUI/Portal/portal_on.png
 snowball.gd::GDScript::-1::1709133844::0::1::::<>Area2D<>::
 snowball.tscn::PackedScene::4422598314513507006::1709134675::0::1::::<><>::res://game_objects/player/snowball.gd
-::res://scenes/::1709293192
+::res://scenes/::1709294913
 main_menu.gd::GDScript::-1::1709292685::0::1::::<>Node2D<>::
-main_menu.tscn::PackedScene::1290939451678414645::1709293192::0::1::::<><>::res://scenes/main_menu.gd<>uid://dg4dnexurm8vw::::res://Textures/BG_01.png<>uid://dk1nwngr0vaeq::::res://Textures/Dragon_1.png<>uid://w2cumdx803ha::::res://Textures/GUI/Portal/portal_off.png<>uid://dbsodhb1hs527::::res://Textures/GUI/Portal/portal_on.png<>uid://cslpr2nmeohmp::::res://Textures/Dragon_2.png<>uid://wyu52gh5blcs::::res://Textures/GUI/start.png<>uid://ocsacvfqhgjb::::res://Textures/GUI/gallery.png<>uid://bden81rrdrpb8::::res://Textures/GUI/credits.png
-::res://scenes/playable_levels/::1709293628
-gallery.gd::GDScript::-1::1709293153::0::1::::<>Node2D<>::
-gallery.tscn::PackedScene::3108385263623469813::1709293628::0::1::::<><>::res://scenes/playable_levels/gallery.gd<>uid://ocsacvfqhgjb::::res://Textures/GUI/gallery.png<>uid://cxmkikacvqx45::::res://Textures/GUI/arrowR.png<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>uid://dg4dnexurm8vw::::res://Textures/BG_01.png<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://d3omr22wthtsl::::res://Textures/BG_02.png<>uid://dwn23dit2leh5::::res://Textures/player/Hurt/1.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://cshel7uoipd02::::res://Textures/player/Hurt/2.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://bq5vdj5ykuppv::::res://Textures/player/Hurt/3.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://bpx1k2swwfv4d::::res://Textures/1.png<>uid://ujos18qccrcc::::res://Textures/2.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://ckorv6b5qx1vp::::res://Textures/3.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://b4voahbr5txck::::res://Textures/player/jump/1.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png<>uid://bb4cwg4sodgrn::::res://Textures/player/jump/2.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png
+main_menu.tscn::PackedScene::1290939451678414645::1709294913::0::1::::<><>::res://scenes/main_menu.gd<>uid://dg4dnexurm8vw::::res://Textures/BG_01.png<>uid://dk1nwngr0vaeq::::res://Textures/Dragon_1.png<>uid://w2cumdx803ha::::res://Textures/GUI/Portal/portal_off.png<>uid://dbsodhb1hs527::::res://Textures/GUI/Portal/portal_on.png<>uid://cslpr2nmeohmp::::res://Textures/Dragon_2.png<>uid://wyu52gh5blcs::::res://Textures/GUI/start.png<>uid://ocsacvfqhgjb::::res://Textures/GUI/gallery.png<>uid://bden81rrdrpb8::::res://Textures/GUI/credits.png
+::res://scenes/playable_levels/::1709294944
+gallery.gd::GDScript::-1::1709294944::0::1::::<>Node2D<>::
+gallery.tscn::PackedScene::3108385263623469813::1709294944::0::1::::<><>::res://scenes/playable_levels/gallery.gd<>uid://ocsacvfqhgjb::::res://Textures/GUI/gallery.png<>uid://cxmkikacvqx45::::res://Textures/GUI/arrowR.png<>uid://do1svrdqfffht::::res://Textures/player/walking/1.png<>uid://dg4dnexurm8vw::::res://Textures/BG_01.png<>uid://x64dd5vbvvwd::::res://Textures/player/walking/2.png<>uid://cy26uikrfpyd0::::res://Textures/player/walking/3.png<>uid://d3omr22wthtsl::::res://Textures/BG_02.png<>uid://dwn23dit2leh5::::res://Textures/player/Hurt/1.png<>uid://ckcn65j2fq2em::::res://Textures/player/walking/4.png<>uid://cshel7uoipd02::::res://Textures/player/Hurt/2.png<>uid://gxdw8g3j5g7::::res://Textures/player/walking/5.png<>uid://cenmjkkk0f3r7::::res://Textures/player/walking/6.png<>uid://bq5vdj5ykuppv::::res://Textures/player/Hurt/3.png<>uid://6ih01cowrjfg::::res://Textures/player/walking/7.png<>uid://bpx1k2swwfv4d::::res://Textures/player/Idle/1.png<>uid://ujos18qccrcc::::res://Textures/player/Idle/2.png<>uid://kn4rk4p6qc4y::::res://Textures/player/walking/8.png<>uid://ckorv6b5qx1vp::::res://Textures/player/Idle/3.png<>uid://dojp7he5dd0qv::::res://Textures/player/walking/9.png<>uid://b4voahbr5txck::::res://Textures/player/jump/1.png<>uid://dea0wku1i8vcj::::res://Textures/player/walking/10.png<>uid://bb4cwg4sodgrn::::res://Textures/player/jump/2.png<>uid://1ewntdw7qgl5::::res://Textures/player/jump/3.png<>uid://dta5apsq1lui5::::res://Textures/player/jump/4.png<>uid://dmu56e8xba4j2::::res://Textures/player/jump/5.png<>uid://b8p47fkaenrlb::::res://Textures/Tutorial Snowman/1.png<>uid://b6vr8dgmpmyd1::::res://Textures/Tutorial Snowman/2.png<>uid://bkei3y1q5h0x2::::res://Textures/Tutorial Snowman/3.png
 goal.gd::GDScript::-1::1709283730::0::1::::<>Area2D<>::
 level_1.gd::GDScript::-1::1709281824::0::1::::<>Node2D<>::
-level_1.tscn::PackedScene::8392609182589760205::1709293192::0::1::::<><>::uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>res://scenes/playable_levels/level_1.gd<>uid://3jxqsyb27l5e::::res://Textures/Luna Tile 2.png<>uid://d3omr22wthtsl::::res://Textures/BG_02.png<>uid://b6vr8dgmpmyd1::::res://Textures/Tutorial Snowman/2.png<>res://scenes/playable_levels/goal.gd<>uid://b8p47fkaenrlb::::res://Textures/Tutorial Snowman/1.png<>res://scenes/playable_levels/snowman.gd<>uid://bkei3y1q5h0x2::::res://Textures/Tutorial Snowman/3.png<>uid://bde5v2yv73md8::::res://Textures/Tutorial Snowman/backwards.png<>uid://e4lalpkmywpn::::res://Textures/Tutorial Snowman/jump.png<>uid://c6ee2hf14ryj7::::res://Textures/ball small.png<>uid://d3767kqiu687s::::res://Textures/tree.png<>uid://dcgs4vpwjvibp::::res://game_objects/enemy.tscn<>uid://blgp46m1haad1::::res://Textures/Tutorial Snowman/dead_mushy.png<>uid://w2cumdx803ha::::res://Textures/GUI/Portal/portal_off.png<>uid://dbsodhb1hs527::::res://Textures/GUI/Portal/portal_on.png<>uid://pnqx3v4vqhdf::::res://Textures/Tutorial Snowman/forward.png
+level_1.tscn::PackedScene::8392609182589760205::1709294912::0::1::::<><>::uid://k5icotw4uf5m::::res://game_objects/player/player.tscn<>res://scenes/playable_levels/level_1.gd<>uid://3jxqsyb27l5e::::res://Textures/Luna Tile 2.png<>uid://d3omr22wthtsl::::res://Textures/BG_02.png<>uid://b6vr8dgmpmyd1::::res://Textures/Tutorial Snowman/2.png<>res://scenes/playable_levels/goal.gd<>uid://b8p47fkaenrlb::::res://Textures/Tutorial Snowman/1.png<>res://scenes/playable_levels/snowman.gd<>uid://bkei3y1q5h0x2::::res://Textures/Tutorial Snowman/3.png<>uid://bde5v2yv73md8::::res://Textures/Tutorial Snowman/backwards.png<>uid://e4lalpkmywpn::::res://Textures/Tutorial Snowman/jump.png<>uid://c6ee2hf14ryj7::::res://Textures/ball small.png<>uid://d3767kqiu687s::::res://Textures/tree.png<>uid://dcgs4vpwjvibp::::res://game_objects/enemy.tscn<>uid://blgp46m1haad1::::res://Textures/Tutorial Snowman/dead_mushy.png<>uid://w2cumdx803ha::::res://Textures/GUI/Portal/portal_off.png<>uid://dbsodhb1hs527::::res://Textures/GUI/Portal/portal_on.png<>uid://pnqx3v4vqhdf::::res://Textures/Tutorial Snowman/forward.png
 snowman.gd::GDScript::-1::1709227881::0::1::::<>AnimatedSprite2D<>::
 ::res://sound/::1709289545
 playerhit.mp3::AudioStreamMP3::1585608045253375670::1709286552::1709286630::1::::<><>::
@@ -41,10 +82,7 @@ readme.txt::TextFile::-1::1252249975::0::1::::<><>::
 qubodupRatAttack.ogg::AudioStreamOggVorbis::4669229508050193520::1379804870::1709286630::1::::<><>::
 qubodupRatDeath.ogg::AudioStreamOggVorbis::4749094887252067650::1379804870::1709286630::1::::<><>::
 qubodupRatPain.ogg::AudioStreamOggVorbis::2643561260695416961::1379804870::1709286630::1::::<><>::
-::res://Textures/::1709292375
-1.png::CompressedTexture2D::3488331973324072569::1709216528::1709292375::1::::<><>::
-2.png::CompressedTexture2D::1423239872051591546::1709217165::1709292375::1::::<><>::
-3.png::CompressedTexture2D::5504702414026433273::1709217199::1709292375::1::::<><>::
+::res://Textures/::1709294911
 ball small.png::CompressedTexture2D::6957244492196187274::1709231030::1709231032::1::::<><>::
 ball.png::CompressedTexture2D::3207139752456309345::1709230858::1709230860::1::::<><>::
 BG_01.png::CompressedTexture2D::7640467680630132884::1709220451::1709220453::1::::<><>::
@@ -74,7 +112,10 @@ portal_on.png::CompressedTexture2D::7267465459970530606::1709282345::1709282351:
 1.png::CompressedTexture2D::8731943053781101444::1709218115::1709228044::1::::<><>::
 2.png::CompressedTexture2D::6050955421143896625::1709218186::1709228044::1::::<><>::
 3.png::CompressedTexture2D::3572654448912124175::1709218368::1709228044::1::::<><>::
-::res://Textures/player/Idle/::1709292375
+::res://Textures/player/Idle/::1709294911
+1.png::CompressedTexture2D::3488331973324072569::1709216528::1709294911::1::::<><>::
+2.png::CompressedTexture2D::1423239872051591546::1709217165::1709294911::1::::<><>::
+3.png::CompressedTexture2D::5504702414026433273::1709217199::1709294911::1::::<><>::
 ::res://Textures/player/jump/::1709133844
 1.png::CompressedTexture2D::4466099489951547138::1709133844::1709133844::1::::<><>::
 2.png::CompressedTexture2D::2516637564426408287::1709133844::1709133844::1::::<><>::

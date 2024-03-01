@@ -27,7 +27,7 @@ func _on_gallery_button_pressed():
 	
 func _on_credits_button_pressed():
 	print_debug("CLICK: "+str(GlobalControl.level))
-	GlobalControl.goto_scene("res://scenes/playable_levels/level_1.tscn")
+	GlobalControl.goto_scene("res://credits.tscn")
 	pass # Replace with function body.
 
 func _on_button_mouse_entered():

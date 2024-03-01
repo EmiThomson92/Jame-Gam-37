@@ -2,21 +2,21 @@
 
 [ext_resource type="Script" path="res://game_objects/player.gd" id="1_62ywx"]
 [ext_resource type="Texture2D" uid="uid://do1svrdqfffht" path="res://Textures/player/walking/1.png" id="2_4i35g"]
-[ext_resource type="Texture2D" uid="uid://bpx1k2swwfv4d" path="res://Textures/1.png" id="2_pobst"]
 [ext_resource type="Texture2D" uid="uid://dwn23dit2leh5" path="res://Textures/player/Hurt/1.png" id="2_uxaqs"]
-[ext_resource type="Texture2D" uid="uid://ujos18qccrcc" path="res://Textures/2.png" id="3_7diqa"]
 [ext_resource type="Script" path="res://game_objects/player/Camera2D.gd" id="3_qduf7"]
 [ext_resource type="Texture2D" uid="uid://cshel7uoipd02" path="res://Textures/player/Hurt/2.png" id="3_qyxwx"]
 [ext_resource type="Texture2D" uid="uid://x64dd5vbvvwd" path="res://Textures/player/walking/2.png" id="3_shakn"]
 [ext_resource type="Texture2D" uid="uid://bq5vdj5ykuppv" path="res://Textures/player/Hurt/3.png" id="4_c530u"]
 [ext_resource type="Texture2D" uid="uid://1ewntdw7qgl5" path="res://Textures/player/jump/3.png" id="4_g33oj"]
 [ext_resource type="Script" path="res://hud.gd" id="4_mwovl"]
-[ext_resource type="Texture2D" uid="uid://ckorv6b5qx1vp" path="res://Textures/3.png" id="4_tvv7l"]
 [ext_resource type="Texture2D" uid="uid://cy26uikrfpyd0" path="res://Textures/player/walking/3.png" id="4_yc3r6"]
 [ext_resource type="Texture2D" uid="uid://ckcn65j2fq2em" path="res://Textures/player/walking/4.png" id="5_cw7ds"]
+[ext_resource type="Texture2D" uid="uid://bpx1k2swwfv4d" path="res://Textures/player/Idle/1.png" id="5_d0vmj"]
 [ext_resource type="Texture2D" uid="uid://dta5apsq1lui5" path="res://Textures/player/jump/4.png" id="5_wot2q"]
 [ext_resource type="Texture2D" uid="uid://dmu56e8xba4j2" path="res://Textures/player/jump/5.png" id="6_1duiv"]
+[ext_resource type="Texture2D" uid="uid://ujos18qccrcc" path="res://Textures/player/Idle/2.png" id="6_g2t6d"]
 [ext_resource type="Texture2D" uid="uid://gxdw8g3j5g7" path="res://Textures/player/walking/5.png" id="6_hxtpn"]
+[ext_resource type="Texture2D" uid="uid://ckorv6b5qx1vp" path="res://Textures/player/Idle/3.png" id="7_bqfwo"]
 [ext_resource type="Texture2D" uid="uid://cenmjkkk0f3r7" path="res://Textures/player/walking/6.png" id="7_ptp23"]
 [ext_resource type="Texture2D" uid="uid://6ih01cowrjfg" path="res://Textures/player/walking/7.png" id="8_m7ep5"]
 [ext_resource type="Texture2D" uid="uid://kn4rk4p6qc4y" path="res://Textures/player/walking/8.png" id="9_54lgd"]
@@ -49,16 +49,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_pobst")
+"texture": ExtResource("5_d0vmj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_7diqa")
+"texture": ExtResource("6_g2t6d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_tvv7l")
+"texture": ExtResource("7_bqfwo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_7diqa")
+"texture": ExtResource("6_g2t6d")
 }],
 "loop": true,
 "name": &"idle",

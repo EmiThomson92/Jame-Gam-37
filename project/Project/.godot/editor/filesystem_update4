@@ -5,3 +5,8 @@ res://test_level.tscn
 res://game_objects/player/player.tscn
 res://game_objects/enemy.tscn
 res://scenes/playable_levels/gallery.tscn
+res://scenes/playable_levels/gallery.gd
+res://game_objects/enemy.gd
+res://credits.tscn
+res://credits.gd
+res://scenes/main_menu.gd

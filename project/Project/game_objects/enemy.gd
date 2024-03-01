@@ -1,9 +1,11 @@
 extends Node2D
 signal enemy_hurt
+@onready var animated_sprite = $animatedSprite
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group("enemy", true)
+	animated_sprite.play()
 	pass # Replace with function body.
 
 
