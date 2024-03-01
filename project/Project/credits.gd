@@ -14,3 +14,8 @@ func _process(delta):
 func _on_exit_button_pressed():
 	GlobalControl.goto_scene("res://scenes/main_menu.tscn")
 	pass # Replace with function body.
+
+
+func _on_rich_text_label_meta_clicked(meta):
+	OS.shell_open(str(meta))
+	pass # Replace with function body.
