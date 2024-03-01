@@ -37,7 +37,7 @@ func _physics_process(delta):
 	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("move_left", "move_right")
 	if direction:
 		velocity.x = move_toward(velocity.x, SPEED * direction, ACCEL * delta)
 		if velocity.x != 0 and !is_jumping and !is_hurt:
@@ -72,7 +72,7 @@ func apply_gravity(delta):
 func handle_jump():
 	if !is_on_floor() and is_jumping == false:
 		pass
-	elif Input.is_action_just_pressed("ui_accept") and jumps > 0:
+	elif Input.is_action_just_pressed("jump") and jumps > 0:
 		velocity.y = JUMP_VELOCITY
 		jumps -= 1
 		animated_sprite_2d.play("jump")
@@ -82,7 +82,7 @@ func handle_jump():
 	elif is_on_floor():
 		jumps = NUM_JUMPS
 		is_jumping = false	
-	if Input.is_action_just_released("ui_accept") and velocity.y < JUMP_VELOCITY/2:
+	if Input.is_action_just_released("jump") and velocity.y < JUMP_VELOCITY/2:
 		velocity.y = move_toward(velocity.y, 0, 1000)
 
 func throw_snowball():

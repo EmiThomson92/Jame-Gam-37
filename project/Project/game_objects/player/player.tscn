@@ -158,7 +158,7 @@ animation = &"hurt"
 autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D"]
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 limit_left = -640
 limit_bottom = 768
 limit_smoothed = true

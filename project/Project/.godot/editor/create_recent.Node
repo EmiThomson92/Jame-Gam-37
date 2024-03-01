@@ -1,3 +1,4 @@
+Node
 Camera2D
 AnimatedSprite2D
 Sprite2D
@@ -12,4 +13,3 @@ Node2D
 TileMap
 Control
 Container
-CenterContainer
