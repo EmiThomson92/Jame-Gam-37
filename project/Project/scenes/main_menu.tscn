@@ -1,11 +1,26 @@
-[gd_scene load_steps=8 format=3 uid="uid://snlt4j30ldpd"]
+[gd_scene load_steps=10 format=3 uid="uid://snlt4j30ldpd"]
 
 [ext_resource type="Texture2D" uid="uid://ci0gvqyqhymv7" path="res://Textures/GUI/button.png" id="1_1dlqr"]
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_h0y1r"]
 [ext_resource type="Texture2D" uid="uid://dg4dnexurm8vw" path="res://Textures/BG_01.png" id="2_mpafj"]
 [ext_resource type="Texture2D" uid="uid://dk1nwngr0vaeq" path="res://Textures/Dragon_1.png" id="3_7s2hx"]
+[ext_resource type="Texture2D" uid="uid://w2cumdx803ha" path="res://Textures/GUI/Portal/portal_off.png" id="3_33nlb"]
 [ext_resource type="Texture2D" uid="uid://dbsodhb1hs527" path="res://Textures/GUI/Portal/portal_on.png" id="3_njrtx"]
 [ext_resource type="Texture2D" uid="uid://cslpr2nmeohmp" path="res://Textures/Dragon_2.png" id="5_kqnm7"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eeruf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_33nlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_njrtx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8kdcn"]
 animations = [{
@@ -30,15 +45,19 @@ position = Vector2(644, 385)
 scale = Vector2(0.540187, 0.540187)
 texture = ExtResource("2_mpafj")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(648, 379)
+scale = Vector2(1, 1)
+
 [node name="CenterContainer" type="CenterContainer" parent="."]
 offset_right = 6400.0
 offset_bottom = 3840.0
 scale = Vector2(0.2, 0.2)
 
-[node name="PortalOn" type="Sprite2D" parent="CenterContainer"]
+[node name="Portal" type="AnimatedSprite2D" parent="CenterContainer"]
 position = Vector2(3280, 1735)
 scale = Vector2(5, 5)
-texture = ExtResource("3_njrtx")
+sprite_frames = SubResource("SpriteFrames_eeruf")
 
 [node name="TextureButton" type="TextureButton" parent="CenterContainer"]
 layout_mode = 2

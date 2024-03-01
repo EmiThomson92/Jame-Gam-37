@@ -170,7 +170,7 @@ scale = Vector2(0.06, 0.06)
 sprite_frames = SubResource("SpriteFrames_4rtwl")
 
 [node name="player" parent="." instance=ExtResource("1_bhp8j")]
-position = Vector2(-104, 496)
+position = Vector2(-104, 552)
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2(632, -496)
