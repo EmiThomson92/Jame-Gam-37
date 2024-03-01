@@ -1,12 +1,6 @@
-res://scenes/main_menu.tscn
-res://game_objects/platforms/square_platform.tscn
+res://credits.tscn
 res://scenes/playable_levels/level_1.tscn
-res://test_level.tscn
+res://scenes/main_menu.tscn
 res://game_objects/player/player.tscn
 res://game_objects/enemy.tscn
 res://scenes/playable_levels/gallery.tscn
-res://scenes/playable_levels/gallery.gd
-res://game_objects/enemy.gd
-res://credits.tscn
-res://credits.gd
-res://scenes/main_menu.gd

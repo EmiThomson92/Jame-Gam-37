@@ -1,44 +1,58 @@
-[gd_scene load_steps=45 format=3 uid="uid://bkjywey3wxb70"]
+[gd_scene load_steps=59 format=3 uid="uid://bkjywey3wxb70"]
 
 [ext_resource type="Script" path="res://scenes/playable_levels/gallery.gd" id="1_fxsvi"]
 [ext_resource type="Texture2D" uid="uid://ocsacvfqhgjb" path="res://Textures/GUI/gallery.png" id="1_tmaau"]
 [ext_resource type="Texture2D" uid="uid://cxmkikacvqx45" path="res://Textures/GUI/arrowR.png" id="2_1t7op"]
 [ext_resource type="Texture2D" uid="uid://do1svrdqfffht" path="res://Textures/player/walking/1.png" id="2_5vywq"]
-[ext_resource type="Texture2D" uid="uid://dg4dnexurm8vw" path="res://Textures/BG_01.png" id="3_mnhxd"]
 [ext_resource type="Texture2D" uid="uid://x64dd5vbvvwd" path="res://Textures/player/walking/2.png" id="3_nuwt4"]
 [ext_resource type="Texture2D" uid="uid://6xlqkd16hok6" path="res://Textures/GUI/arrowL.png" id="3_xar02"]
 [ext_resource type="Texture2D" uid="uid://cy26uikrfpyd0" path="res://Textures/player/walking/3.png" id="4_edvmx"]
-[ext_resource type="Texture2D" uid="uid://d3omr22wthtsl" path="res://Textures/BG_02.png" id="4_tsohn"]
 [ext_resource type="Texture2D" uid="uid://bu6se6dy2nuqh" path="res://Textures/GUI/x.png" id="4_vvv77"]
 [ext_resource type="Texture2D" uid="uid://dwn23dit2leh5" path="res://Textures/player/Hurt/1.png" id="5_hu600"]
 [ext_resource type="Texture2D" uid="uid://ckcn65j2fq2em" path="res://Textures/player/walking/4.png" id="5_rx4xl"]
 [ext_resource type="Texture2D" uid="uid://cshel7uoipd02" path="res://Textures/player/Hurt/2.png" id="6_3qm4g"]
 [ext_resource type="Texture2D" uid="uid://bj2a02hbvac4c" path="res://Gallery Ref/Auri/cutscenes/1 - 1.png" id="6_djp05"]
 [ext_resource type="Texture2D" uid="uid://gxdw8g3j5g7" path="res://Textures/player/walking/5.png" id="6_h6f73"]
+[ext_resource type="Texture2D" uid="uid://e2srkabfn1e8" path="res://Gallery Ref/Luna/BG_1.PNG" id="6_t1qll"]
 [ext_resource type="Texture2D" uid="uid://cenmjkkk0f3r7" path="res://Textures/player/walking/6.png" id="7_1w7br"]
 [ext_resource type="Texture2D" uid="uid://xtjn1y03ctwa" path="res://Gallery Ref/Auri/cutscenes/1 - 2.png" id="7_4s1py"]
+[ext_resource type="Texture2D" uid="uid://ywctpvlw6agf" path="res://Gallery Ref/Luna/BG_2.PNG" id="7_foncx"]
 [ext_resource type="Texture2D" uid="uid://bq5vdj5ykuppv" path="res://Textures/player/Hurt/3.png" id="7_gpmfh"]
 [ext_resource type="Texture2D" uid="uid://6ih01cowrjfg" path="res://Textures/player/walking/7.png" id="8_0fpg6"]
+[ext_resource type="Texture2D" uid="uid://hsjjhob38j1h" path="res://Gallery Ref/Luna/BG_3.PNG" id="8_efhem"]
 [ext_resource type="Texture2D" uid="uid://cpkk7lqhxc7ol" path="res://Gallery Ref/Auri/cutscenes/1 - 3.png" id="8_i52rp"]
 [ext_resource type="Texture2D" uid="uid://bpx1k2swwfv4d" path="res://Textures/player/Idle/1.png" id="8_jy0pw"]
 [ext_resource type="Texture2D" uid="uid://ujos18qccrcc" path="res://Textures/player/Idle/2.png" id="9_8xnps"]
 [ext_resource type="Texture2D" uid="uid://kn4rk4p6qc4y" path="res://Textures/player/walking/8.png" id="9_a0qw8"]
+[ext_resource type="Texture2D" uid="uid://ncm5ngbg20ol" path="res://Gallery Ref/Luna/Dragon_1.PNG" id="9_l7kvu"]
 [ext_resource type="Texture2D" uid="uid://dbhirg0xjongm" path="res://Gallery Ref/Auri/cutscenes/2 - 1.png" id="9_p4g0l"]
+[ext_resource type="Texture2D" uid="uid://1ay40tdt5yo2" path="res://Gallery Ref/Luna/Dragon_2.PNG" id="10_8rxk2"]
 [ext_resource type="Texture2D" uid="uid://cjor4b3t82i3u" path="res://Gallery Ref/Auri/cutscenes/2 - 2.png" id="10_a7fyi"]
 [ext_resource type="Texture2D" uid="uid://ckorv6b5qx1vp" path="res://Textures/player/Idle/3.png" id="10_i78op"]
 [ext_resource type="Texture2D" uid="uid://dojp7he5dd0qv" path="res://Textures/player/walking/9.png" id="10_yj3hn"]
 [ext_resource type="Texture2D" uid="uid://b4fgyptpwe1e" path="res://Gallery Ref/Auri/cutscenes/2 - 3.png" id="11_nr2ro"]
 [ext_resource type="Texture2D" uid="uid://b4voahbr5txck" path="res://Textures/player/jump/1.png" id="11_pe4ug"]
 [ext_resource type="Texture2D" uid="uid://dea0wku1i8vcj" path="res://Textures/player/walking/10.png" id="11_ui653"]
+[ext_resource type="Texture2D" uid="uid://drrlruw6tl3l8" path="res://Gallery Ref/Luna/Dragon_3.PNG" id="11_uuf6x"]
 [ext_resource type="Texture2D" uid="uid://dnqxg8k5kyc6t" path="res://Gallery Ref/Auri/cutscenes/2 - 4.png" id="12_ndiqe"]
 [ext_resource type="Texture2D" uid="uid://bb4cwg4sodgrn" path="res://Textures/player/jump/2.png" id="12_rjgjk"]
+[ext_resource type="Texture2D" uid="uid://fjpxq24lcrlf" path="res://Gallery Ref/Luna/Dragon_Tree_1.PNG" id="12_wb403"]
+[ext_resource type="Texture2D" uid="uid://cubepduei8ih" path="res://Gallery Ref/Luna/Dragon_Tree_2.PNG" id="13_d238l"]
 [ext_resource type="Texture2D" uid="uid://dny4vi3hut43s" path="res://Gallery Ref/Auri/cutscenes/2 - 5.png" id="13_t120q"]
 [ext_resource type="Texture2D" uid="uid://1ewntdw7qgl5" path="res://Textures/player/jump/3.png" id="13_tpqqg"]
 [ext_resource type="Texture2D" uid="uid://dta5apsq1lui5" path="res://Textures/player/jump/4.png" id="14_iyggt"]
+[ext_resource type="Texture2D" uid="uid://i3l10dqodt58" path="res://Gallery Ref/Luna/Portal_1.PNG" id="14_woa0t"]
 [ext_resource type="Texture2D" uid="uid://dmu56e8xba4j2" path="res://Textures/player/jump/5.png" id="15_h1kvd"]
+[ext_resource type="Texture2D" uid="uid://8jfqk8klpa8f" path="res://Gallery Ref/Luna/Portal_2.PNG" id="15_kkbel"]
+[ext_resource type="Texture2D" uid="uid://ccvl4ues78cyw" path="res://Gallery Ref/Luna/Tile_1.PNG" id="16_0nkqw"]
 [ext_resource type="Texture2D" uid="uid://bvr2n7efjgokd" path="res://Gallery Ref/Auri/mush/1.png" id="16_tj2q1"]
+[ext_resource type="Texture2D" uid="uid://dceq202a2xw53" path="res://Gallery Ref/Luna/Tile_2.PNG" id="17_0vbce"]
 [ext_resource type="Texture2D" uid="uid://dmsvtwufmdnex" path="res://Gallery Ref/Auri/mush/2.png" id="17_p2p5m"]
 [ext_resource type="Texture2D" uid="uid://di78p7uqxwk22" path="res://Gallery Ref/Auri/mush/3.png" id="18_57axn"]
+[ext_resource type="Texture2D" uid="uid://b7qs2gvhxss6c" path="res://Gallery Ref/Luna/Tile_3.PNG" id="18_jfveb"]
+[ext_resource type="Texture2D" uid="uid://bx6dg3wvshpe6" path="res://Gallery Ref/Luna/Tile_4.PNG" id="19_jh6es"]
+[ext_resource type="Texture2D" uid="uid://0l4ap0eva2ch" path="res://Gallery Ref/Luna/Tile_5.PNG" id="20_rv27n"]
+[ext_resource type="Texture2D" uid="uid://cy7xfy8et317j" path="res://Gallery Ref/Luna/Trees.PNG" id="21_6705t"]
 [ext_resource type="Texture2D" uid="uid://b8p47fkaenrlb" path="res://Textures/Tutorial Snowman/1.png" id="27_fmq3b"]
 [ext_resource type="Texture2D" uid="uid://b6vr8dgmpmyd1" path="res://Textures/Tutorial Snowman/2.png" id="28_u5lrp"]
 [ext_resource type="Texture2D" uid="uid://bkei3y1q5h0x2" path="res://Textures/Tutorial Snowman/3.png" id="29_77ejr"]
@@ -48,7 +62,7 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_mnhxd")
+"texture": ExtResource("6_t1qll")
 }],
 "loop": true,
 "name": &"BG_1",
@@ -56,10 +70,122 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_tsohn")
+"texture": ExtResource("7_foncx")
 }],
 "loop": true,
 "name": &"BG_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_efhem")
+}],
+"loop": true,
+"name": &"BG_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_l7kvu")
+}],
+"loop": true,
+"name": &"Dragon_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_8rxk2")
+}],
+"loop": true,
+"name": &"Dragon_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_uuf6x")
+}],
+"loop": true,
+"name": &"Dragon_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_wb403")
+}],
+"loop": true,
+"name": &"Dragon_Tree_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_d238l")
+}],
+"loop": true,
+"name": &"Dragon_Tree_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_woa0t")
+}],
+"loop": true,
+"name": &"Portal_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_kkbel")
+}],
+"loop": true,
+"name": &"Portal_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_0nkqw")
+}],
+"loop": true,
+"name": &"Tile_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_0vbce")
+}],
+"loop": true,
+"name": &"Tile_2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_jfveb")
+}],
+"loop": true,
+"name": &"Tile_3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_jh6es")
+}],
+"loop": true,
+"name": &"Tile_4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_rv27n")
+}],
+"loop": true,
+"name": &"Tile_5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_6705t")
+}],
+"loop": true,
+"name": &"Trees",
 "speed": 5.0
 }, {
 "frames": [{
@@ -211,6 +337,11 @@ animations = [{
 [node name="Gallery" type="Node2D"]
 script = ExtResource("1_fxsvi")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 768.0
+color = Color(0.180392, 0.180392, 0.180392, 1)
+
 [node name="right_button" type="TextureButton" parent="."]
 offset_left = 960.0
 offset_top = 528.0
@@ -249,9 +380,10 @@ mouse_filter = 2
 layout_mode = 2
 
 [node name="gallery_display" type="AnimatedSprite2D" parent="CenterContainer/Control"]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.476, 0.476)
 sprite_frames = SubResource("SpriteFrames_ovhkn")
-animation = &"mush"
+animation = &"Tile_5"
+frame_progress = 0.766432
 
 [node name="Button" type="Sprite2D" parent="."]
 position = Vector2(632, 624)

@@ -23,17 +23,17 @@ offset_bottom = 768.0
 theme_override_colors/default_color = Color(0.258824, 0.258824, 0.258824, 1)
 theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
-text = "[center]TEAM LAA
+text = "[center][u][font_size=50]TEAM LAA[/font_size][/u]
 Luna
 Backgrounds and objects
-Socials: BLAH
+[url=\"https://linktr.ee/lunaocelot\"]Linktree[/url]
 
 Auri
 Characters + UI
-Twitter + Tumblr: Aurizonaicetea
+[url=\"https://twitter.com/AurizonaIcedTea\"]Twitter[/url] + [url=\"https://www.tumblr.com/aurizonaicedtea\"]Tumblr
 
 AyriiDotExe
-Programming
+Programming and Game Design
 
 Rat Growl & Hiss.flac Copyright 2013  [url=\"https://qubodup.github.io\"]Iwan Gabovitch[/url] [url=\"https://creativecommons.org/licenses/by/3.0/\"]CC-BY3 license[/url]"
 
