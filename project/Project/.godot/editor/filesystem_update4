@@ -1,9 +1,7 @@
-res://scenes/main_menu.gd
 res://scenes/main_menu.tscn
-res://scenes/playable_levels/level_1.tscn
 res://game_objects/platforms/square_platform.tscn
+res://scenes/playable_levels/level_1.tscn
 res://test_level.tscn
 res://game_objects/player/player.tscn
 res://game_objects/enemy.tscn
 res://scenes/playable_levels/gallery.tscn
-res://scenes/playable_levels/gallery.gd
