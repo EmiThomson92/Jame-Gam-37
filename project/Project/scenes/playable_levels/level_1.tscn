@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://drtpbunyitsfd"]
+[gd_scene load_steps=24 format=3 uid="uid://drtpbunyitsfd"]
 
 [ext_resource type="PackedScene" uid="uid://k5icotw4uf5m" path="res://game_objects/player/player.tscn" id="1_bhp8j"]
 [ext_resource type="Script" path="res://scenes/playable_levels/level_1.gd" id="1_o3mgw"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c6ee2hf14ryj7" path="res://Textures/ball small.png" id="9_x53od"]
 [ext_resource type="Texture2D" uid="uid://d3767kqiu687s" path="res://Textures/tree.png" id="10_uelng"]
 [ext_resource type="PackedScene" uid="uid://dcgs4vpwjvibp" path="res://game_objects/enemy.tscn" id="11_4peg3"]
+[ext_resource type="Texture2D" uid="uid://blgp46m1haad1" path="res://Textures/Tutorial Snowman/dead_mushy.png" id="11_dx5mj"]
 [ext_resource type="Texture2D" uid="uid://w2cumdx803ha" path="res://Textures/GUI/Portal/portal_off.png" id="11_jcq6v"]
 [ext_resource type="Texture2D" uid="uid://dbsodhb1hs527" path="res://Textures/GUI/Portal/portal_on.png" id="12_dtpk5"]
 [ext_resource type="Texture2D" uid="uid://pnqx3v4vqhdf" path="res://Textures/Tutorial Snowman/forward.png" id="15_82k6u"]
@@ -192,6 +193,20 @@ z_as_relative = false
 position = Vector2(1836.7, 416)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("9_n0hlv")
+
+[node name="snowman4" type="AnimatedSprite2D" parent="Tutorial"]
+z_as_relative = false
+position = Vector2(2588.7, 520)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_ue2cb")
+frame_progress = 0.316634
+script = ExtResource("4_2ssv7")
+
+[node name="murder" type="Sprite2D" parent="Tutorial"]
+z_as_relative = false
+position = Vector2(2692.7, 416)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("11_dx5mj")
 
 [node name="goal" type="Area2D" parent="."]
 position = Vector2(1792, 304)
