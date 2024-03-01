@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var heart_2 = $"CanvasLayer/hud/Heart 2"
 @onready var heart_3 = $"CanvasLayer/hud/Heart 3"
 @onready var portal = $CanvasLayer/hud/portal
+signal player_hurt
 
 
 
@@ -99,6 +100,7 @@ func take_damage():
 	health -= 1
 	animated_sprite_2d.play("hurt")
 	is_hurt = true
+	GlobalControl.player_hurt.play()
 	
 func hud_update():
 	if health < 3:

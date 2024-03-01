@@ -1,4 +1,5 @@
 extends Node2D
+signal enemy_hurt
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,6 +31,8 @@ func _on_hit(body):
 	pass # Replace with function body.
 
 func _on_hurt(body):
+	print_debug("HURT")
+	GlobalControl.enemy_hurt.play()
 	body.jumps = 0
 	body.velocity = body.velocity * Vector2(1,-1.2)
 	queue_free()

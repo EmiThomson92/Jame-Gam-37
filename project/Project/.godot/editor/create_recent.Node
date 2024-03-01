@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 Node
 Camera2D
 AnimatedSprite2D
@@ -11,5 +12,3 @@ ParallaxBackground
 TextureRect
 Node2D
 TileMap
-Control
-Container

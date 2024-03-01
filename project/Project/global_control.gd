@@ -2,8 +2,21 @@ extends Node
 var level = 0
 var levels = {}
 var current_scene = null
+var music := AudioStreamPlayer.new()
+var player_hurt := AudioStreamPlayer.new()
+var enemy_hurt := AudioStreamPlayer.new()
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	music.stream = load("res://sound/Snowfall_Looped_ver..ogg")
+	music.volume_db -= 10
+	music.autoplay = true
+	player_hurt.stream = load("res://sound/playerhit.mp3")
+	enemy_hurt.stream = load("res://sound/qubodupRat/qubodupRatPain.ogg")
+	enemy_hurt.volume_db -= 20
+	add_child(music)
+	add_child(player_hurt)
+	add_child(enemy_hurt)
+
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
 	levels["main_menu"] = "res://scenes/main_menu.tscn"
@@ -13,6 +26,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	
 	pass
 
 func goto_scene(path):
