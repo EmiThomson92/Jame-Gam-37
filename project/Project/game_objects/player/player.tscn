@@ -199,5 +199,5 @@ frame_progress = 0.428996
 
 [node name="portal" type="AnimatedSprite2D" parent="CanvasLayer/hud"]
 position = Vector2(241, 51)
-scale = Vector2(0.05, 0.05)
+scale = Vector2(0.0398683, 0.0398683)
 sprite_frames = SubResource("SpriteFrames_jx1oh")

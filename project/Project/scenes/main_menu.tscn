@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://snlt4j30ldpd"]
+[gd_scene load_steps=8 format=3 uid="uid://snlt4j30ldpd"]
 
 [ext_resource type="Texture2D" uid="uid://ci0gvqyqhymv7" path="res://Textures/GUI/button.png" id="1_1dlqr"]
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_h0y1r"]
 [ext_resource type="Texture2D" uid="uid://dg4dnexurm8vw" path="res://Textures/BG_01.png" id="2_mpafj"]
 [ext_resource type="Texture2D" uid="uid://dk1nwngr0vaeq" path="res://Textures/Dragon_1.png" id="3_7s2hx"]
+[ext_resource type="Texture2D" uid="uid://dbsodhb1hs527" path="res://Textures/GUI/Portal/portal_on.png" id="3_njrtx"]
 [ext_resource type="Texture2D" uid="uid://cslpr2nmeohmp" path="res://Textures/Dragon_2.png" id="5_kqnm7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8kdcn"]
@@ -34,6 +35,11 @@ offset_right = 6400.0
 offset_bottom = 3840.0
 scale = Vector2(0.2, 0.2)
 
+[node name="PortalOn" type="Sprite2D" parent="CenterContainer"]
+position = Vector2(3280, 1735)
+scale = Vector2(5, 5)
+texture = ExtResource("3_njrtx")
+
 [node name="TextureButton" type="TextureButton" parent="CenterContainer"]
 layout_mode = 2
 texture_normal = ExtResource("1_1dlqr")
@@ -61,7 +67,8 @@ frame_progress = 0.785107
 layout_mode = 2
 
 [node name="Dragon1" type="AnimatedSprite2D" parent="CenterContainer/Container2"]
-position = Vector2(1680, 0)
+position = Vector2(1680, -0.000366211)
+scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_8kdcn")
 frame_progress = 0.496747
 flip_h = true

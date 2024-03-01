@@ -1,9 +1,9 @@
 res://main.tscn::5b5345f73e483cf59503d4486ce96663::1709133844::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
-res://test_level.tscn::4da4d88cfbafa953a6113c22653639b4::1709282572::res://.godot/exported/133200997/export-7d3e253c2a16ada73a9aac58bf8e0302-test_level.scn
+res://test_level.tscn::4da4d88cfbafa953a6113c22653639b4::1709283755::res://.godot/exported/133200997/export-7d3e253c2a16ada73a9aac58bf8e0302-test_level.scn
 res://game_objects/platforms/slanted_platform.tscn::5d1546640c8d1919bcbb33dd7166242c::1709133844::res://.godot/exported/133200997/export-85a107783b2eecb691c0119a0b120f0e-slanted_platform.scn
-res://game_objects/platforms/square_platform.tscn::a00a030ec316e6ccc784ab563bb986cd::1709282572::res://.godot/exported/133200997/export-8e269ed5522bd1098e226b959bacbc90-square_platform.scn
-res://game_objects/player/player.tscn::a9d74b218ff39d5f206f231e8ce78bc9::1709282620::res://.godot/exported/133200997/export-a4fdbf97c73805bf1c8dfcffbea0c8cb-player.scn
+res://game_objects/platforms/square_platform.tscn::a00a030ec316e6ccc784ab563bb986cd::1709283755::res://.godot/exported/133200997/export-8e269ed5522bd1098e226b959bacbc90-square_platform.scn
+res://game_objects/player/player.tscn::112d8518cf6bbb093087fcbc352e3358::1709283755::res://.godot/exported/133200997/export-a4fdbf97c73805bf1c8dfcffbea0c8cb-player.scn
 res://game_objects/player/snowball.tscn::855e8cb11300735226791c3a3add2e34::1709134675::res://.godot/exported/133200997/export-88633c58e49da1a9452c0f6c8448cad8-snowball.scn
 res://game_objects/enemy.tscn::d4d5d6c1a2882bfe201525f4093ffbd2::1709278419::res://.godot/exported/133200997/export-8020df062d2c1c46ade45fcb0e98cba0-enemy.scn
-res://scenes/playable_levels/level_1.tscn::4561f7bf69b079bf7aadf1bffe786619::1709282572::res://.godot/exported/133200997/export-28b20b8052ff621d007cf35aba98877c-level_1.scn
-res://scenes/main_menu.tscn::76c797ed40d86912ce73d583739d3092::1709282572::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
+res://scenes/playable_levels/level_1.tscn::2ef47682c57c1f218c82773079760710::1709283792::res://.godot/exported/133200997/export-28b20b8052ff621d007cf35aba98877c-level_1.scn
+res://scenes/main_menu.tscn::fa4b3879fe9435a75c251f8c7a5cda26::1709283755::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn

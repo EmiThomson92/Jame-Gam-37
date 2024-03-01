@@ -1,5 +1,5 @@
 extends Area2D
-@onready var color_rect = $ColorRect
+@onready var portal = $portal
 @onready var level_1 = $".."
 
 
@@ -11,7 +11,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if level_1.level_clear == true:
-		color_rect.color = Color("00ff00b2")
+		portal.frame = 1
 	pass
 
 
